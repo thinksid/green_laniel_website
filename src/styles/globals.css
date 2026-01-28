@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 253 252 251;
+    --foreground: 15 15 15;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-neutral-900 font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Section wrapper */
+  .section {
+    @apply py-16 md:py-20 lg:py-24 px-4 md:px-8 lg:px-16;
+  }
+
+  /* Container utilities */
+  .container-content {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .container-narrow {
+    @apply max-w-3xl mx-auto;
+  }
+
+  /* Typography utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-up {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

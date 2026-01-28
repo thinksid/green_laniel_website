@@ -1,0 +1,301 @@
+{
+  "nav": {
+    "vita1": "Vita 1",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Schedule a Call"
+  },
+  "home": {
+    "hero": {
+      "headline": "Your Plants Are Talking.",
+      "headlineLine2": "Are You Listening?",
+      "subheadline": "Catch stress 24-48 hours before visible symptoms. Protect your operation. Optimize your yields.",
+      "primaryCta": "Schedule a Call",
+      "secondaryCta": "See How It Works"
+    },
+    "stakes": {
+      "heading": "The Problem With How You Monitor Today",
+      "blind": {
+        "title": "You're Blind",
+        "text": "Environmental sensors show what's around your plants—not inside them."
+      },
+      "late": {
+        "title": "You're Late",
+        "text": "By the time you SEE the problem, the damage is already done."
+      },
+      "losing": {
+        "title": "You're Losing",
+        "text": "One undetected stress event can cost more than your annual monitoring investment."
+      },
+      "quote": "\"I never know until it's too late.\"",
+      "quoteAttribution": "— What we hear from growers every week"
+    },
+    "valueProp": {
+      "heading": "What If Your Plants Could Text You?",
+      "notification": "Alert: Cold stress detected in Zone 3. Plants experiencing 35°F. Equipment check recommended.",
+      "protectorsHeading": "FOR PROTECTORS",
+      "protectors": [
+        "Catch equipment failures before catastrophic loss",
+        "Detect invisible cold/heat stress",
+        "Prevent spoilage in storage"
+      ],
+      "optimizersHeading": "FOR OPTIMIZERS",
+      "optimizers": [
+        "Forecast stress events weeks in advance",
+        "Reduce input costs 30-50%",
+        "Improve quality consistency"
+      ],
+      "cta": "Schedule a Call"
+    },
+    "guide": {
+      "heading": "Swiss Precision. American Service.",
+      "subheading": "We're not another agtech company shipping you a box and wishing you luck. We're the bridge.",
+      "quote": "I've spent 30 years in fields from Colombia to Canada. I know what growers need isn't more data—it's the right data, at the right time, in plain language.",
+      "name": "Mauricio Manotas",
+      "title": "CEO, Green Laniel",
+      "stats": {
+        "installations": { "value": "1,000+", "label": "European installations" },
+        "validated": { "value": "Validated with", "label": "Agroscope Switzerland" },
+        "response": { "value": "Response in", "label": "hours, not days" },
+        "bcorp": { "value": "B-Corp", "label": "Certified" }
+      }
+    },
+    "plan": {
+      "heading": "Getting Started Is Simple",
+      "steps": [
+        { "number": "1", "title": "Schedule a Call", "description": "We assess your fit together" },
+        { "number": "2", "title": "Pilot Install", "description": "We handle everything" },
+        { "number": "3", "title": "Monitor Season", "description": "Weekly check-ins" },
+        { "number": "4", "title": "Review ROI", "description": "Quantify value created" }
+      ],
+      "cta": "Schedule a Call"
+    },
+    "caseStudies": {
+      "heading": "Real Results From Real Growers",
+      "studies": [
+        {
+          "title": "Texas Greenhouse",
+          "quote": "The heaters said 60°F. The plants were at 35°F.",
+          "summary": "A Texas greenhouse caught an equipment malfunction that sensors missed—preventing catastrophic crop loss.",
+          "tags": { "crop": "Tomatoes", "size": "~5-10ha", "useCase": "Equipment failure" },
+          "cta": "Request Full Case Study"
+        },
+        {
+          "title": "Frito-Lay/PepsiCo",
+          "quote": "We now forecast sprouting 2-3 weeks ahead.",
+          "summary": "30-50% reduction in anti-sprouting chemical costs, zero spoilage, confident delivery schedules.",
+          "tags": { "crop": "Potato Storage", "size": "Large facility", "useCase": "Forecasting" },
+          "cta": "Request Full Case Study"
+        },
+        {
+          "title": "Colombia Blueberries",
+          "quote": "Calls every other day asking how to get Vita 1.",
+          "summary": "Viral word-of-mouth from single installation; invited to national conference.",
+          "tags": { "crop": "Blueberries", "size": "~5-10ha", "useCase": "Quality consistency" },
+          "cta": "Request Full Case Study"
+        }
+      ]
+    },
+    "explainer": {
+      "heading": "How Vita 1 Actually Works",
+      "paragraphs": [
+        "Vita 1 measures what's happening INSIDE your plants—not around them.",
+        "Traditional sensors tell you the air is 60°F. Vita 1 tells you your plants are experiencing cold stress because the heater failed. Traditional monitoring shows humidity is normal. Vita 1 catches the water stress your plants feel before leaves show symptoms.",
+        "It's the difference between knowing the weather forecast and knowing how your body actually feels. Your plants now have a voice."
+      ],
+      "cta": "Learn More"
+    },
+    "finalCta": {
+      "headline": "Stop Guessing. Start Listening.",
+      "subheadline": "Schedule a 15-minute call to see if Vita 1 is right for your operation.",
+      "cta": "Schedule a Call"
+    }
+  },
+  "vita1": {
+    "hero": {
+      "headline": "Vita 1",
+      "subheadline": "The world's first commercial plant biosignal monitoring system. Swiss-engineered. American-supported.",
+      "primaryCta": "Schedule a Call"
+    },
+    "stakes": {
+      "heading": "Your Environmental Sensors Have a Blind Spot",
+      "description": "They monitor the air. But your plants live in a different world—one you can't see until it's too late."
+    },
+    "useCases": {
+      "heading": "Use Cases",
+      "tabs": {
+        "greenhouse": "Greenhouses",
+        "potato": "Potato Storage",
+        "openField": "Open Field"
+      },
+      "greenhouse": {
+        "title": "GREENHOUSE / HIGH TUNNEL",
+        "applications": [
+          "Equipment failure detection (heaters, fans, irrigation)",
+          "Cold/heat stress alerts before visible damage",
+          "Irrigation optimization based on actual plant needs"
+        ],
+        "setup": "Typical Setup: 8 sensors per hectare",
+        "bestFor": "Best For: Tomatoes, peppers, berries, cannabis",
+        "result": {
+          "quote": "Sensors said 60°F. Plants experiencing 35°F for 10+ hours. Caught heater failure before catastrophic loss.",
+          "attribution": "— Texas Greenhouse"
+        }
+      },
+      "potato": {
+        "title": "POTATO STORAGE",
+        "applications": [
+          "Sprouting forecasting 2-3 weeks in advance",
+          "Anti-sprouting chemical (ASC) optimization",
+          "Confident shipping schedule planning"
+        ],
+        "setup": "Typical Setup: 1-2 sensors per 2 hectares",
+        "bestFor": "Best For: Seed potatoes, processing potatoes, table stock",
+        "result": {
+          "quote": "30-50% reduction in ASC costs. Zero spoilage. We now ship with confidence.",
+          "attribution": "— Frito-Lay/PepsiCo"
+        }
+      },
+      "openField": {
+        "title": "OPEN FIELD (BERRIES)",
+        "applications": [
+          "Humidity stress monitoring",
+          "Pest pressure correlation",
+          "Quality consistency for premium pricing"
+        ],
+        "setup": "Typical Setup: 8 sensors per hectare",
+        "bestFor": "Best For: Blueberries, strawberries",
+        "result": {
+          "quote": "Word spread so fast we get calls every other day. Invited to present at national conference.",
+          "attribution": "— Colombia Blueberry Grower"
+        }
+      }
+    },
+    "service": {
+      "heading": "We Don't Ship and Wish You Luck",
+      "description": "Every Vita 1 installation includes professional setup, training, and ongoing support. We're partners, not vendors."
+    },
+    "specs": {
+      "heading": "Investment & Specifications",
+      "year1": {
+        "title": "YEAR 1",
+        "price": "$7,000",
+        "includes": [
+          "Hardware (sensors + gateway)",
+          "12-month data subscription",
+          "Professional installation",
+          "Training (1-2 hours)",
+          "Ongoing support"
+        ]
+      },
+      "year2": {
+        "title": "YEAR 2+",
+        "price": "$1,000/year",
+        "includes": [
+          "Data subscription",
+          "Ongoing support",
+          "Software updates"
+        ],
+        "note": "Hardware lifespan: 3-4 seasons"
+      },
+      "quote": "What did your last undetected stress event cost you? Vita 1 pays for itself with one save.",
+      "cta": "Schedule a Call"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "I already have soil and temperature sensors. Why do I need Vita 1?",
+          "answer": "Environmental sensors show what's AROUND plants. Vita 1 shows what's INSIDE. In Texas, sensors said 60°F—plants were experiencing 35°F because the heater failed. That's the gap Vita 1 fills."
+        },
+        {
+          "question": "How do I know it works for my specific crop?",
+          "answer": "We only deploy for validated crops. If you're growing berries, tomatoes, peppers, or storing potatoes, we have proven results. For other crops, we'll be honest about what we know and offer a pilot if there's potential."
+        },
+        {
+          "question": "Is it complicated to use?",
+          "answer": "We install it. Alerts come in plain English text messages. Training takes 1-2 hours. If you can read a text, you can use Vita 1."
+        },
+        {
+          "question": "What's the ROI?",
+          "answer": "One prevented disaster typically exceeds the annual investment. A Texas greenhouse saved a crop worth far more than $7K. Frito-Lay reduced chemical costs 30-50%. We'll calculate your specific ROI potential on our call."
+        },
+        {
+          "question": "Can I try it before committing?",
+          "answer": "Yes. We offer pilot installations (2-4 sensors, one season). If Vita 1 doesn't catch stress you wouldn't have seen otherwise, you'll know."
+        }
+      ]
+    },
+    "finalCta": {
+      "headline": "Ready to Listen to Your Plants?",
+      "subheadline": "Schedule a 15-minute call to discuss your operation.",
+      "cta": "Schedule a Call"
+    }
+  },
+  "about": {
+    "hero": {
+      "headline": "We Are The Bridge",
+      "subheadline": "Connecting Swiss precision to American fields. European engineering to practical reality."
+    },
+    "mauricio": {
+      "name": "MAURICIO MANOTAS, CEO",
+      "bio": "30 years in agriculture across North America, Latin America, and Europe. From the flower fields of Colombia to greenhouses in Canada. Bilingual. Field-tested in 35°C and -10°C.",
+      "quote": "I've seen too many growers buy expensive equipment that ends up collecting dust because no one helped them actually use it. That's not how we work."
+    },
+    "bridges": {
+      "heading": "The Four Bridges We Serve",
+      "items": [
+        { "name": "Technology", "from": "Swiss lab precision", "to": "Muddy field reality" },
+        { "name": "Culture", "from": "European engineering", "to": "North American pragmatism" },
+        { "name": "Generational", "from": "\"Grandpa's way\"", "to": "Data-driven decisions" },
+        { "name": "Service", "from": "European product", "to": "American response times" }
+      ]
+    },
+    "vivent": {
+      "heading": "Our Technology Partner: Vivent",
+      "description": "Vivent Biosignals is the world leader in plant electrophysiology, headquartered in Switzerland. 1,000+ installations across Europe. Validated with Agroscope (Swiss federal agricultural research). B-Corp certified.",
+      "note": "Green Laniel is the exclusive Americas distributor, providing localized installation, training, and support."
+    },
+    "cta": {
+      "headline": "Let's Talk",
+      "subheadline": "Whether you're protecting against disaster or optimizing for performance, we'd love to hear about your operation.",
+      "cta": "Schedule a Call"
+    }
+  },
+  "contact": {
+    "heading": "Let's Talk",
+    "subheadline": "Schedule a 15-minute call to see if Vita 1 is right for your operation.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "operationType": "Operation Type",
+      "operationOptions": {
+        "greenhouse": "Greenhouse",
+        "highTunnel": "High Tunnel",
+        "potatoStorage": "Potato Storage",
+        "openField": "Open Field",
+        "other": "Other"
+      },
+      "crop": "Primary Crop",
+      "hectares": "Hectares",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you! We'll be in touch within 24 hours.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "email": "info@greenlaniel.com",
+      "serving": "Serving: North & South America",
+      "languages": "Languages: English & Spanish",
+      "note": "We respond within 24 hours. Usually much faster."
+    }
+  },
+  "footer": {
+    "tagline": "The Bridge to Better Growing",
+    "navigation": "Navigation",
+    "contactUs": "Contact",
+    "followUs": "Follow Us",
+    "copyright": "© 2026 Green Laniel. All rights reserved.",
+    "viventNote": "Exclusive distributor of Vivent Biosignals technology in The Americas."
+  }
+}

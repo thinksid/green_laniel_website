@@ -1,0 +1,100 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Button } from '@/components/ui/button';
+
+export function Hero() {
+  const t = useTranslations('home.hero');
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-forest-900 via-forest-800 to-forest-900 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '40px 40px',
+          }}
+        />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container-content px-4 md:px-8 py-32 text-center text-white">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="font-display text-display-lg md:text-display-xl mb-6">
+            <span className="block">{t('headline')}</span>
+            <span className="block text-forest-300">{t('headlineLine2')}</span>
+          </h1>
+        </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-xl md:text-2xl text-forest-200 max-w-2xl mx-auto mb-10"
+        >
+          {t('subheadline')}
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <Button href="/contact" size="lg">
+            {t('primaryCta')}
+          </Button>
+          <Button
+            href="#explainer"
+            variant="outline"
+            size="lg"
+            className="border-white text-white hover:bg-white hover:text-forest-800"
+          >
+            {t('secondaryCta')}
+          </Button>
+        </motion.div>
+
+        {/* Trust Logos */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-16 pt-8 border-t border-forest-700/50"
+        >
+          <p className="text-sm text-forest-400 mb-4">Trusted Technology Partners</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            {/* Placeholder logos - replace with actual SVGs */}
+            <span className="text-lg font-semibold">Vivent</span>
+            <span className="text-lg font-semibold">B-Corp</span>
+            <span className="text-lg font-semibold">Agroscope</span>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.6 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="text-forest-400"
+        >
+          <ChevronDown className="w-8 h-8" />
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}

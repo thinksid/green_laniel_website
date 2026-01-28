@@ -1,0 +1,301 @@
+{
+  "nav": {
+    "vita1": "Vita 1",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Agenda una Llamada"
+  },
+  "home": {
+    "hero": {
+      "headline": "Tus Plantas Están Hablando.",
+      "headlineLine2": "¿Las Estás Escuchando?",
+      "subheadline": "Detecta el estrés 24-48 horas antes de los síntomas visibles. Protege tu operación. Optimiza tus rendimientos.",
+      "primaryCta": "Agenda una Llamada",
+      "secondaryCta": "Ver Cómo Funciona"
+    },
+    "stakes": {
+      "heading": "El Problema Con Tu Monitoreo Actual",
+      "blind": {
+        "title": "Estás Ciego",
+        "text": "Los sensores ambientales muestran lo que hay alrededor de tus plantas—no dentro de ellas."
+      },
+      "late": {
+        "title": "Llegas Tarde",
+        "text": "Cuando VES el problema, el daño ya está hecho."
+      },
+      "losing": {
+        "title": "Estás Perdiendo",
+        "text": "Un evento de estrés no detectado puede costar más que tu inversión anual en monitoreo."
+      },
+      "quote": "\"Nunca lo sé hasta que es demasiado tarde.\"",
+      "quoteAttribution": "— Lo que escuchamos de productores cada semana"
+    },
+    "valueProp": {
+      "heading": "¿Qué Pasaría Si Tus Plantas Pudieran Escribirte?",
+      "notification": "Alerta: Estrés por frío detectado en Zona 3. Plantas a 2°C. Se recomienda revisar equipos.",
+      "protectorsHeading": "PARA PROTECTORES",
+      "protectors": [
+        "Detecta fallas de equipos antes de pérdidas catastróficas",
+        "Identifica estrés por frío/calor invisible",
+        "Previene deterioro en almacenamiento"
+      ],
+      "optimizersHeading": "PARA OPTIMIZADORES",
+      "optimizers": [
+        "Pronostica eventos de estrés con semanas de anticipación",
+        "Reduce costos de insumos 30-50%",
+        "Mejora la consistencia de calidad"
+      ],
+      "cta": "Agenda una Llamada"
+    },
+    "guide": {
+      "heading": "Precisión Suiza. Servicio Americano.",
+      "subheading": "No somos otra empresa de agtech que te envía una caja y te desea suerte. Somos el puente.",
+      "quote": "He pasado 30 años en campos desde Colombia hasta Canadá. Sé que los productores no necesitan más datos—necesitan los datos correctos, en el momento correcto, en lenguaje claro.",
+      "name": "Mauricio Manotas",
+      "title": "CEO, Green Laniel",
+      "stats": {
+        "installations": { "value": "1,000+", "label": "instalaciones europeas" },
+        "validated": { "value": "Validado con", "label": "Agroscope Suiza" },
+        "response": { "value": "Respuesta en", "label": "horas, no días" },
+        "bcorp": { "value": "Certificación", "label": "B-Corp" }
+      }
+    },
+    "plan": {
+      "heading": "Empezar Es Simple",
+      "steps": [
+        { "number": "1", "title": "Agenda una Llamada", "description": "Evaluamos tu caso juntos" },
+        { "number": "2", "title": "Instalación Piloto", "description": "Nosotros nos encargamos de todo" },
+        { "number": "3", "title": "Temporada de Monitoreo", "description": "Revisiones semanales" },
+        { "number": "4", "title": "Revisión de ROI", "description": "Cuantificamos el valor creado" }
+      ],
+      "cta": "Agenda una Llamada"
+    },
+    "caseStudies": {
+      "heading": "Resultados Reales de Productores Reales",
+      "studies": [
+        {
+          "title": "Invernadero en Texas",
+          "quote": "Los calentadores marcaban 15°C. Las plantas estaban a 2°C.",
+          "summary": "Un invernadero en Texas detectó una falla de equipo que los sensores no vieron—previniendo una pérdida catastrófica.",
+          "tags": { "crop": "Tomates", "size": "~5-10ha", "useCase": "Falla de equipos" },
+          "cta": "Solicitar Caso de Estudio"
+        },
+        {
+          "title": "Frito-Lay/PepsiCo",
+          "quote": "Ahora pronosticamos la brotación con 2-3 semanas de anticipación.",
+          "summary": "Reducción del 30-50% en costos de químicos anti-brotación, cero deterioro, cronogramas de entrega confiables.",
+          "tags": { "crop": "Almacén de Papa", "size": "Gran instalación", "useCase": "Pronóstico" },
+          "cta": "Solicitar Caso de Estudio"
+        },
+        {
+          "title": "Arándanos Colombia",
+          "quote": "Llamadas cada dos días preguntando cómo obtener Vita 1.",
+          "summary": "Recomendación viral de boca en boca desde una sola instalación; invitados a conferencia nacional.",
+          "tags": { "crop": "Arándanos", "size": "~5-10ha", "useCase": "Consistencia de calidad" },
+          "cta": "Solicitar Caso de Estudio"
+        }
+      ]
+    },
+    "explainer": {
+      "heading": "Cómo Funciona Vita 1 Realmente",
+      "paragraphs": [
+        "Vita 1 mide lo que está pasando DENTRO de tus plantas—no alrededor de ellas.",
+        "Los sensores tradicionales te dicen que el aire está a 15°C. Vita 1 te dice que tus plantas están experimentando estrés por frío porque el calentador falló. El monitoreo tradicional muestra que la humedad es normal. Vita 1 detecta el estrés hídrico que sienten tus plantas antes de que las hojas muestren síntomas.",
+        "Es la diferencia entre conocer el pronóstico del tiempo y saber cómo se siente realmente tu cuerpo. Tus plantas ahora tienen voz."
+      ],
+      "cta": "Saber Más"
+    },
+    "finalCta": {
+      "headline": "Deja de Adivinar. Empieza a Escuchar.",
+      "subheadline": "Agenda una llamada de 15 minutos para ver si Vita 1 es adecuado para tu operación.",
+      "cta": "Agenda una Llamada"
+    }
+  },
+  "vita1": {
+    "hero": {
+      "headline": "Vita 1",
+      "subheadline": "El primer sistema comercial de monitoreo de bioseñales vegetales del mundo. Ingeniería suiza. Soporte americano.",
+      "primaryCta": "Agenda una Llamada"
+    },
+    "stakes": {
+      "heading": "Tus Sensores Ambientales Tienen un Punto Ciego",
+      "description": "Monitorean el aire. Pero tus plantas viven en un mundo diferente—uno que no puedes ver hasta que es demasiado tarde."
+    },
+    "useCases": {
+      "heading": "Casos de Uso",
+      "tabs": {
+        "greenhouse": "Invernaderos",
+        "potato": "Almacén de Papa",
+        "openField": "Campo Abierto"
+      },
+      "greenhouse": {
+        "title": "INVERNADERO / TÚNEL ALTO",
+        "applications": [
+          "Detección de fallas de equipos (calentadores, ventiladores, riego)",
+          "Alertas de estrés por frío/calor antes de daño visible",
+          "Optimización de riego basada en necesidades reales de la planta"
+        ],
+        "setup": "Configuración Típica: 8 sensores por hectárea",
+        "bestFor": "Ideal Para: Tomates, pimientos, frutos rojos, cannabis",
+        "result": {
+          "quote": "Los sensores marcaban 15°C. Las plantas experimentaron 2°C por más de 10 horas. Detectamos la falla del calentador antes de una pérdida catastrófica.",
+          "attribution": "— Invernadero de Texas"
+        }
+      },
+      "potato": {
+        "title": "ALMACÉN DE PAPA",
+        "applications": [
+          "Pronóstico de brotación con 2-3 semanas de anticipación",
+          "Optimización de químicos anti-brotación (ASC)",
+          "Planificación confiable de cronogramas de envío"
+        ],
+        "setup": "Configuración Típica: 1-2 sensores por 2 hectáreas",
+        "bestFor": "Ideal Para: Papas de semilla, papas de procesamiento, papas de mesa",
+        "result": {
+          "quote": "Reducción del 30-50% en costos de ASC. Cero deterioro. Ahora enviamos con confianza.",
+          "attribution": "— Frito-Lay/PepsiCo"
+        }
+      },
+      "openField": {
+        "title": "CAMPO ABIERTO (FRUTOS ROJOS)",
+        "applications": [
+          "Monitoreo de estrés por humedad",
+          "Correlación de presión de plagas",
+          "Consistencia de calidad para precios premium"
+        ],
+        "setup": "Configuración Típica: 8 sensores por hectárea",
+        "bestFor": "Ideal Para: Arándanos, fresas",
+        "result": {
+          "quote": "La noticia se esparció tan rápido que recibimos llamadas cada dos días. Nos invitaron a presentar en la conferencia nacional.",
+          "attribution": "— Productor de Arándanos de Colombia"
+        }
+      }
+    },
+    "service": {
+      "heading": "No Enviamos y Te Deseamos Suerte",
+      "description": "Cada instalación de Vita 1 incluye configuración profesional, capacitación y soporte continuo. Somos socios, no proveedores."
+    },
+    "specs": {
+      "heading": "Inversión y Especificaciones",
+      "year1": {
+        "title": "AÑO 1",
+        "price": "$7,000",
+        "includes": [
+          "Hardware (sensores + gateway)",
+          "Suscripción de datos por 12 meses",
+          "Instalación profesional",
+          "Capacitación (1-2 horas)",
+          "Soporte continuo"
+        ]
+      },
+      "year2": {
+        "title": "AÑO 2+",
+        "price": "$1,000/año",
+        "includes": [
+          "Suscripción de datos",
+          "Soporte continuo",
+          "Actualizaciones de software"
+        ],
+        "note": "Vida útil del hardware: 3-4 temporadas"
+      },
+      "quote": "¿Cuánto te costó tu último evento de estrés no detectado? Vita 1 se paga solo con una prevención.",
+      "cta": "Agenda una Llamada"
+    },
+    "faq": {
+      "heading": "Preguntas Frecuentes",
+      "items": [
+        {
+          "question": "Ya tengo sensores de suelo y temperatura. ¿Por qué necesito Vita 1?",
+          "answer": "Los sensores ambientales muestran lo que hay ALREDEDOR de las plantas. Vita 1 muestra lo que hay DENTRO. En Texas, los sensores marcaban 15°C—las plantas estaban experimentando 2°C porque el calentador falló. Esa es la brecha que Vita 1 llena."
+        },
+        {
+          "question": "¿Cómo sé si funciona para mi cultivo específico?",
+          "answer": "Solo implementamos para cultivos validados. Si cultivas frutos rojos, tomates, pimientos, o almacenas papas, tenemos resultados comprobados. Para otros cultivos, seremos honestos sobre lo que sabemos y ofreceremos un piloto si hay potencial."
+        },
+        {
+          "question": "¿Es complicado de usar?",
+          "answer": "Nosotros lo instalamos. Las alertas llegan como mensajes de texto en español claro. La capacitación toma 1-2 horas. Si puedes leer un mensaje de texto, puedes usar Vita 1."
+        },
+        {
+          "question": "¿Cuál es el ROI?",
+          "answer": "Un desastre prevenido típicamente supera la inversión anual. Un invernadero de Texas salvó un cultivo que valía mucho más de $7K. Frito-Lay redujo costos de químicos 30-50%. Calcularemos tu potencial de ROI específico en nuestra llamada."
+        },
+        {
+          "question": "¿Puedo probarlo antes de comprometerme?",
+          "answer": "Sí. Ofrecemos instalaciones piloto (2-4 sensores, una temporada). Si Vita 1 no detecta estrés que de otra manera no habrías visto, lo sabrás."
+        }
+      ]
+    },
+    "finalCta": {
+      "headline": "¿Listo para Escuchar a Tus Plantas?",
+      "subheadline": "Agenda una llamada de 15 minutos para discutir tu operación.",
+      "cta": "Agenda una Llamada"
+    }
+  },
+  "about": {
+    "hero": {
+      "headline": "Somos El Puente",
+      "subheadline": "Conectando la precisión suiza con los campos americanos. La ingeniería europea con la realidad práctica."
+    },
+    "mauricio": {
+      "name": "MAURICIO MANOTAS, CEO",
+      "bio": "30 años en agricultura en Norte América, América Latina y Europa. Desde los campos de flores de Colombia hasta invernaderos en Canadá. Bilingüe. Probado en campo a 35°C y -10°C.",
+      "quote": "He visto a demasiados productores comprar equipos costosos que terminan acumulando polvo porque nadie los ayudó a usarlos realmente. Así no es como trabajamos."
+    },
+    "bridges": {
+      "heading": "Los Cuatro Puentes Que Servimos",
+      "items": [
+        { "name": "Tecnología", "from": "Precisión de laboratorio suizo", "to": "Realidad del campo enlodado" },
+        { "name": "Cultura", "from": "Ingeniería europea", "to": "Pragmatismo norteamericano" },
+        { "name": "Generacional", "from": "\"La forma del abuelo\"", "to": "Decisiones basadas en datos" },
+        { "name": "Servicio", "from": "Producto europeo", "to": "Tiempos de respuesta americanos" }
+      ]
+    },
+    "vivent": {
+      "heading": "Nuestro Socio Tecnológico: Vivent",
+      "description": "Vivent Biosignals es el líder mundial en electrofisiología vegetal, con sede en Suiza. Más de 1,000 instalaciones en Europa. Validado con Agroscope (investigación agrícola federal suiza). Certificación B-Corp.",
+      "note": "Green Laniel es el distribuidor exclusivo para las Américas, proporcionando instalación localizada, capacitación y soporte."
+    },
+    "cta": {
+      "headline": "Hablemos",
+      "subheadline": "Ya sea que estés protegiéndote contra desastres u optimizando el rendimiento, nos encantaría saber sobre tu operación.",
+      "cta": "Agenda una Llamada"
+    }
+  },
+  "contact": {
+    "heading": "Hablemos",
+    "subheadline": "Agenda una llamada de 15 minutos para ver si Vita 1 es adecuado para tu operación.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "operationType": "Tipo de Operación",
+      "operationOptions": {
+        "greenhouse": "Invernadero",
+        "highTunnel": "Túnel Alto",
+        "potatoStorage": "Almacén de Papa",
+        "openField": "Campo Abierto",
+        "other": "Otro"
+      },
+      "crop": "Cultivo Principal",
+      "hectares": "Hectáreas",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "success": "¡Gracias! Nos pondremos en contacto en menos de 24 horas.",
+      "error": "Algo salió mal. Por favor intenta de nuevo."
+    },
+    "info": {
+      "email": "info@greenlaniel.com",
+      "serving": "Servicio: Norte y Sur América",
+      "languages": "Idiomas: Inglés y Español",
+      "note": "Respondemos en menos de 24 horas. Usualmente mucho más rápido."
+    }
+  },
+  "footer": {
+    "tagline": "El Puente Hacia un Mejor Cultivo",
+    "navigation": "Navegación",
+    "contactUs": "Contacto",
+    "followUs": "Síguenos",
+    "copyright": "© 2026 Green Laniel. Todos los derechos reservados.",
+    "viventNote": "Distribuidor exclusivo de la tecnología Vivent Biosignals en Las Américas."
+  }
+}
