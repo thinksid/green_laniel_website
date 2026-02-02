@@ -29,20 +29,25 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="font-display text-display-lg md:text-display-xl mb-6">
+          <h1 className="font-display text-display-lg md:text-display-xl mb-12">
             <span className="block">{t('headline')}</span>
             <span className="block text-forest-300">{t('headlineLine2')}</span>
           </h1>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-xl md:text-2xl text-forest-200 max-w-2xl mx-auto mb-10"
+          className="max-w-3xl mx-auto mb-12"
         >
-          {t('subheadline')}
-        </motion.p>
+          <p className="text-xl md:text-2xl text-forest-200 mb-2 whitespace-nowrap">
+            {t('subheadline')}
+          </p>
+          <p className="text-xl md:text-2xl text-white font-semibold">
+            {t('subheadline2')}
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +55,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button href="/contact" size="lg">
+          <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} size="lg">
             {t('primaryCta')}
           </Button>
           <Button
@@ -61,22 +66,6 @@ export function Hero() {
           >
             {t('secondaryCta')}
           </Button>
-        </motion.div>
-
-        {/* Trust Logos */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 pt-8 border-t border-forest-700/50"
-        >
-          <p className="text-sm text-forest-400 mb-4">Trusted Technology Partners</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {/* Placeholder logos - replace with actual SVGs */}
-            <span className="text-lg font-semibold">Vivent</span>
-            <span className="text-lg font-semibold">B-Corp</span>
-            <span className="text-lg font-semibold">Agroscope</span>
-          </div>
         </motion.div>
       </div>
 

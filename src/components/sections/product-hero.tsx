@@ -2,23 +2,25 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 export function ProductHero() {
   const t = useTranslations('vita1.hero');
 
   return (
-    <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-forest-800 via-forest-700 to-forest-800 overflow-hidden pt-20">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
+    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/vita1-hero.jpg"
+          alt="Vita 1 sensor in greenhouse"
+          fill
+          className="object-cover"
+          priority
         />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-brunswick-700/70" />
       </div>
 
       {/* Content */}
@@ -28,29 +30,31 @@ export function ProductHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-4 py-1 bg-forest-600/50 rounded-full text-sm font-medium text-forest-200 mb-6">
-            Plant Biosignal Monitoring System
-          </span>
           <h1 className="font-display text-display-lg md:text-display-xl mb-6">
             {t('headline')}
           </h1>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-xl md:text-2xl text-forest-200 max-w-2xl mx-auto mb-10"
+          className="text-xl md:text-2xl max-w-3xl mx-auto mb-10"
         >
-          {t('subheadline')}
-        </motion.p>
+          <p className="text-sage-200 mb-2">
+            {t('subheadline')}
+          </p>
+          <p className="text-white font-semibold">
+            {t('subheadline2')}
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <Button href="/contact" size="lg">
+          <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} size="lg" className="bg-sage-500 hover:bg-sage-400 text-brunswick-900 font-semibold">
             {t('primaryCta')}
           </Button>
         </motion.div>

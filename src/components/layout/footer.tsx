@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Mail, MapPin, Globe } from 'lucide-react';
+import Image from 'next/image';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -14,20 +15,26 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-forest-900 text-white">
+    <footer className="bg-brunswick-900 text-white">
       <div className="container-content px-4 md:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* Brand Column */}
           <div className="md:col-span-1">
-            <Link href="/" className="font-display text-2xl">
-              Green Laniel
+            <Link href="/" className="inline-block mb-3">
+              <Image
+                src="/logos/logo-white.png"
+                alt="Green Laniel"
+                width={160}
+                height={36}
+                className="h-9 w-auto object-contain"
+              />
             </Link>
-            <p className="mt-2 text-forest-300">{t('tagline')}</p>
+            <p className="mt-2 text-brunswick-300">{t('tagline')}</p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-forest-400 mb-4">
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-brunswick-400 mb-4">
               {t('navigation')}
             </h3>
             <ul className="space-y-2">
@@ -35,7 +42,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-forest-200 hover:text-white transition-colors"
+                    className="text-brunswick-200 hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -46,12 +53,12 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-forest-400 mb-4">
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-brunswick-400 mb-4">
               {t('contactUs')}
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-forest-200">
-                <Mail className="w-4 h-4 text-forest-400" />
+              <li className="flex items-center gap-2 text-brunswick-200">
+                <Mail className="w-4 h-4 text-brunswick-400" />
                 <a
                   href="mailto:info@greenlaniel.com"
                   className="hover:text-white transition-colors"
@@ -59,12 +66,12 @@ export function Footer() {
                   {contact('email')}
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-forest-200">
-                <MapPin className="w-4 h-4 text-forest-400" />
+              <li className="flex items-center gap-2 text-brunswick-200">
+                <MapPin className="w-4 h-4 text-brunswick-400" />
                 <span>{contact('serving')}</span>
               </li>
-              <li className="flex items-center gap-2 text-forest-200">
-                <Globe className="w-4 h-4 text-forest-400" />
+              <li className="flex items-center gap-2 text-brunswick-200">
+                <Globe className="w-4 h-4 text-brunswick-400" />
                 <span>{contact('languages')}</span>
               </li>
             </ul>
@@ -72,14 +79,14 @@ export function Footer() {
 
           {/* Social / Follow */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-forest-400 mb-4">
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-brunswick-400 mb-4">
               {t('followUs')}
             </h3>
             <a
-              href="https://linkedin.com/company/greenlaniel"
+              href="https://www.linkedin.com/company/green-laniel-consulting"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-forest-200 hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 text-brunswick-200 hover:text-white transition-colors"
             >
               <svg
                 className="w-5 h-5"
@@ -95,8 +102,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-forest-800">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-forest-400">
+        <div className="mt-12 pt-8 border-t border-brunswick-800">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-brunswick-400">
             <p>{t('copyright')}</p>
             <p>{t('viventNote')}</p>
           </div>

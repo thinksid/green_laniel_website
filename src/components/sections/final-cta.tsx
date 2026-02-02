@@ -25,7 +25,7 @@ export function FinalCTA({ translationKey = 'home.finalCta' }: FinalCTAProps) {
         </h2>
         <p className="text-xl text-forest-200 mb-8">{t('subheadline')}</p>
         <Button
-          href="/contact"
+          href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'}
           size="lg"
           className="bg-white text-forest-800 hover:bg-forest-100"
         >

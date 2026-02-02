@@ -15,13 +15,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    'bg-forest-800 text-white hover:bg-forest-700 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-forest-500',
+    'bg-brunswick-700 text-white hover:bg-brunswick-600 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:ring-brunswick-500',
   secondary:
-    'bg-white text-forest-800 hover:bg-forest-50 hover:shadow-md focus:ring-forest-500',
+    'bg-white text-brunswick-800 hover:bg-brunswick-50 hover:shadow-md focus:ring-brunswick-500',
   outline:
-    'bg-transparent text-forest-800 border-2 border-forest-800 hover:bg-forest-800 hover:text-white focus:ring-forest-500',
+    'bg-transparent text-brunswick-800 border-2 border-brunswick-800 hover:bg-brunswick-800 hover:text-white focus:ring-brunswick-500',
   ghost:
-    'bg-transparent text-neutral-700 hover:text-forest-700 hover:bg-forest-100 focus:ring-forest-500',
+    'bg-transparent text-neutral-700 hover:text-brunswick-700 hover:bg-brunswick-100 focus:ring-brunswick-500',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

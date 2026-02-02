@@ -1,4 +1,4 @@
-import { DM_Sans, DM_Serif_Display } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -7,16 +7,11 @@ import '@/styles/globals.css';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 
-const dmSans = DM_Sans({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-dm-sans',
-  display: 'swap',
-});
-
-const dmSerif = DM_Serif_Display({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-dm-serif',
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-poppins',
   display: 'swap',
 });
 
@@ -77,7 +72,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${dmSans.variable} ${dmSerif.variable}`}>
+    <html lang={locale} className={poppins.variable}>
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Navbar />

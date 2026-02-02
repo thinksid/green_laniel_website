@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { ProductHero } from '@/components/sections/product-hero';
 import { Stakes } from '@/components/sections/stakes';
 import { UseCases } from '@/components/sections/use-cases';
+import { ProductViewer360 } from '@/components/sections/product-viewer-360';
 import { Service } from '@/components/sections/service';
 import { Specs } from '@/components/sections/specs';
 import { CaseStudies } from '@/components/sections/case-studies';
@@ -43,8 +44,9 @@ export default async function Vita1Page({
   return (
     <>
       <ProductHero />
-      <Stakes />
+      <Stakes page="vita1" />
       <UseCases />
+      <ProductViewer360 />
       <Service />
       <Specs />
       <CaseStudies />

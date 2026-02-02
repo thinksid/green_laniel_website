@@ -1,73 +1,105 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Globe, Award, Beaker } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
-import { Card } from '@/components/ui/card';
+
+// Partner logos configuration
+const partners = [
+  {
+    name: 'Vivent',
+    logo: '/images/partners/vivent-logo.png',
+    url: 'https://www.vivent-biosignals.com',
+  },
+  {
+    name: 'B Corp',
+    logo: '/images/partners/bcorp-logo.png',
+    url: null,
+  },
+  {
+    name: 'Agroscope',
+    logo: '/images/partners/agroscope-logo.png',
+    url: null,
+  },
+];
 
 export function Vivent() {
   const t = useTranslations('about.vivent');
 
-  const highlights = [
-    { icon: Globe, text: '1,000+ installations across Europe' },
-    { icon: Beaker, text: 'Validated with Agroscope (Swiss federal research)' },
-    { icon: Award, text: 'B-Corp certified' },
-    { icon: Shield, text: 'World leader in plant electrophysiology' },
-  ];
-
   return (
     <Section>
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-        {/* Content */}
+      <div className="max-w-4xl mx-auto">
+        {/* Section Title */}
+        <SectionHeader className="mb-12">
+          <SectionTitle>{t('heading')}</SectionTitle>
+        </SectionHeader>
+
+        {/* Partner Logos - larger, directly below title */}
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          className="mb-8"
         >
-          <SectionHeader className="text-left mb-8">
-            <SectionTitle className="text-left">{t('heading')}</SectionTitle>
-          </SectionHeader>
+          <div className="flex flex-wrap justify-center items-center gap-16 md:gap-20 mb-12">
+            {partners.map((partner, index) => {
+              const LogoImage = (
+                <div
+                  key={index}
+                  className="relative h-20 w-40 md:h-24 md:w-48 grayscale opacity-40 hover:opacity-60 transition-opacity"
+                  style={{
+                    filter: 'grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(50%)',
+                  }}
+                >
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              );
 
-          <p className="text-lg text-neutral-700 mb-6">{t('description')}</p>
+              if (partner.url) {
+                return (
+                  <a
+                    key={index}
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    aria-label={`Visit ${partner.name} website`}
+                  >
+                    {LogoImage}
+                  </a>
+                );
+              }
 
-          <div className="p-4 bg-forest-50 rounded-xl border border-forest-100">
-            <p className="text-forest-700 font-medium">{t('note')}</p>
+              return LogoImage;
+            })}
           </div>
+
+          <p className="text-center text-sm text-neutral-500 uppercase tracking-wider font-medium mb-10">
+            {t('partnersLabel')}
+          </p>
         </motion.div>
 
-        {/* Partner Card */}
+        {/* Content - description and note */}
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="text-center"
         >
-          <Card variant="featured" padding="lg">
-            {/* Logo Placeholder */}
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center w-32 h-16 bg-white/10 rounded-lg">
-                <span className="font-display text-2xl text-white">Vivent</span>
-              </div>
-              <p className="mt-2 text-forest-300 text-sm">
-                Biosignals | Switzerland
-              </p>
-            </div>
+          <p className="text-lg text-neutral-700 max-w-2xl mx-auto mb-6">
+            {t('description')}
+          </p>
 
-            {/* Highlights */}
-            <ul className="space-y-4">
-              {highlights.map((item, index) => {
-                const Icon = item.icon;
-                return (
-                  <li key={index} className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-forest-600 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="text-forest-100">{item.text}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </Card>
+          <div className="p-4 bg-brunswick-50 rounded-xl border border-brunswick-100 max-w-xl mx-auto">
+            <p className="text-brunswick-700 font-medium">{t('note')}</p>
+          </div>
         </motion.div>
       </div>
     </Section>

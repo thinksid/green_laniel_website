@@ -4,9 +4,16 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+
+// Case study images mapping
+const caseStudyImages = [
+  '/images/case-tomatoes.jpeg',   // Texas Greenhouse - Tomatoes
+  '/images/case-potato.png',      // Frito-Lay/PepsiCo - Potatoes
+  '/images/case-berries.jpeg',    // Colombia - Berries
+];
 
 export function CaseStudies() {
   const t = useTranslations('home.caseStudies');
@@ -38,18 +45,18 @@ export function CaseStudies() {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-forest-50 transition-colors"
+          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-brunswick-50 transition-colors"
           aria-label="Previous case study"
         >
-          <ChevronLeft className="w-5 h-5 text-forest-700" />
+          <ChevronLeft className="w-5 h-5 text-brunswick-700" />
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-forest-50 transition-colors"
+          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-brunswick-50 transition-colors"
           aria-label="Next case study"
         >
-          <ChevronRight className="w-5 h-5 text-forest-700" />
+          <ChevronRight className="w-5 h-5 text-brunswick-700" />
         </button>
 
         {/* Carousel */}
@@ -64,20 +71,23 @@ export function CaseStudies() {
             >
               <Card padding="lg">
                 <div className="grid md:grid-cols-2 gap-8">
-                  {/* Image Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-forest-100 to-forest-200 rounded-xl flex items-center justify-center">
-                    <span className="text-forest-500 font-display text-xl">
-                      {studies[currentIndex].title}
-                    </span>
+                  {/* Case Study Image */}
+                  <div className="aspect-video relative rounded-xl overflow-hidden bg-brunswick-100">
+                    <Image
+                      src={caseStudyImages[currentIndex] || caseStudyImages[0]}
+                      alt={studies[currentIndex].title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
 
                   {/* Content */}
                   <div>
                     <div className="mb-4">
-                      <Quote className="w-8 h-8 text-forest-300" />
+                      <Quote className="w-8 h-8 text-brunswick-300" />
                     </div>
 
-                    <blockquote className="font-display text-xl md:text-2xl text-forest-800 mb-4">
+                    <blockquote className="font-display text-xl md:text-2xl text-brunswick-800 mb-4">
                       {studies[currentIndex].quote}
                     </blockquote>
 
@@ -86,21 +96,17 @@ export function CaseStudies() {
                     </p>
 
                     {/* Tags */}
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      <span className="px-3 py-1 bg-forest-100 text-forest-700 text-sm rounded-full">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-brunswick-100 text-brunswick-700 text-sm rounded-full">
                         {studies[currentIndex].tags.crop}
                       </span>
-                      <span className="px-3 py-1 bg-forest-100 text-forest-700 text-sm rounded-full">
+                      <span className="px-3 py-1 bg-brunswick-100 text-brunswick-700 text-sm rounded-full">
                         {studies[currentIndex].tags.size}
                       </span>
-                      <span className="px-3 py-1 bg-forest-100 text-forest-700 text-sm rounded-full">
+                      <span className="px-3 py-1 bg-brunswick-100 text-brunswick-700 text-sm rounded-full">
                         {studies[currentIndex].tags.useCase}
                       </span>
                     </div>
-
-                    <Button href="/contact" variant="outline" size="sm">
-                      {studies[currentIndex].cta}
-                    </Button>
                   </div>
                 </div>
               </Card>
@@ -115,7 +121,7 @@ export function CaseStudies() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-colors ${
-                index === currentIndex ? 'bg-forest-700' : 'bg-forest-300'
+                index === currentIndex ? 'bg-brunswick-700' : 'bg-brunswick-300'
               }`}
               aria-label={`Go to case study ${index + 1}`}
             />
