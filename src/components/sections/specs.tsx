@@ -6,20 +6,9 @@ import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CustomIcon, type IconName } from '@/components/ui/custom-icon';
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 },
-};
+import { SCHEDULE_CALL_URL } from '@/lib/config';
+import { staggerContainer, fadeInUp } from '@/lib/animations';
+import type { ValueAddItem } from '@/types/translations';
 
 // Icons for each value proposition
 const valueIcons: IconName[] = ['flower', 'greenhouse', 'plants'];
@@ -27,10 +16,7 @@ const valueIcons: IconName[] = ['flower', 'greenhouse', 'plants'];
 export function Specs() {
   const t = useTranslations('vita1.valueAdd');
 
-  const items = t.raw('items') as Array<{
-    title: string;
-    description: string;
-  }>;
+  const items = t.raw('items') as ValueAddItem[];
 
   return (
     <Section>
@@ -75,7 +61,7 @@ export function Specs() {
         transition={{ delay: 0.4 }}
         className="text-center mt-12"
       >
-        <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} size="lg">
+        <Button href={SCHEDULE_CALL_URL} size="lg">
           {t('cta')}
         </Button>
       </motion.div>

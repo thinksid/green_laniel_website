@@ -6,20 +6,9 @@ import { useTranslations } from 'next-intl';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Button } from '@/components/ui/button';
 import { CustomIcon, type IconName } from '@/components/ui/custom-icon';
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 },
-};
+import { SCHEDULE_CALL_URL } from '@/lib/config';
+import { staggerContainer, fadeInUp } from '@/lib/animations';
+import type { PlanStep } from '@/types/translations';
 
 // Icons for each step
 const stepIcons: IconName[] = ['flower', 'greenhouse', 'plants'];
@@ -27,11 +16,7 @@ const stepIcons: IconName[] = ['flower', 'greenhouse', 'plants'];
 export function Plan() {
   const t = useTranslations('home.plan');
 
-  const steps = t.raw('steps') as Array<{
-    number: string;
-    title: string;
-    description: string;
-  }>;
+  const steps = t.raw('steps') as PlanStep[];
 
   return (
     <Section>
@@ -47,7 +32,7 @@ export function Plan() {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         {steps.map((step, index) => (
-          <motion.div key={index} variants={fadeInUp} className="relative">
+          <motion.div key={`step-${index}-${step.title}`} variants={fadeInUp} className="relative">
             {/* Arrow connector (hidden on mobile and last item) */}
             {index < steps.length - 1 && (
               <div className="hidden lg:block absolute top-12 left-full w-6 -translate-x-3 text-brunswick-300">
@@ -87,7 +72,7 @@ export function Plan() {
         transition={{ delay: 0.4 }}
         className="text-center mt-12"
       >
-        <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} size="lg">
+        <Button href={SCHEDULE_CALL_URL} size="lg">
           {t('cta')}
         </Button>
       </motion.div>

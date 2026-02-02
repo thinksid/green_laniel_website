@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Button } from '@/components/ui/button';
 import { LanguageToggle } from './language-toggle';
+import { SCHEDULE_CALL_URL } from '@/lib/config';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -77,7 +78,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               {/* Bottom Section */}
               <div className="pt-6 border-t border-neutral-200 space-y-4">
                 <LanguageToggle className="justify-center" />
-                <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} fullWidth onClick={onClose}>
+                <Button href={SCHEDULE_CALL_URL} fullWidth onClick={onClose}>
                   {t('cta')}
                 </Button>
               </div>

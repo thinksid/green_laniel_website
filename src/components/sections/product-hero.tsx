@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { SCHEDULE_CALL_URL } from '@/lib/config';
 
 export function ProductHero() {
   const t = useTranslations('vita1.hero');
@@ -54,7 +55,7 @@ export function ProductHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} size="lg" className="bg-sage-500 hover:bg-sage-400 text-brunswick-900 font-semibold">
+          <Button href={SCHEDULE_CALL_URL} size="lg" className="bg-sage-500 hover:bg-sage-400 text-brunswick-900 font-semibold">
             {t('primaryCta')}
           </Button>
         </motion.div>

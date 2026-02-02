@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Section, SectionHeader, SectionTitle, SectionSubtitle } from '@/components/ui/section';
@@ -83,10 +83,9 @@ function VideoContent() {
             height="100%"
             src="https://www.youtube.com/embed/Y10rNMhZH6U?start=19"
             title="Vita 1 in action"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full border-0"
           />
         </div>
       </Card>
@@ -108,6 +107,8 @@ function FeaturesContent() {
     '/vita-1-left.png',
     '/images/laptop_mockup2.png',
   ];
+
+  const TOTAL_VIEWS = VIEWS.length;
 
   // Preload images
   useEffect(() => {
@@ -134,15 +135,15 @@ function FeaturesContent() {
     });
   }, []);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     setDirection(-1);
-    setCurrentView((prev) => (prev - 1 + 4) % 4);
-  };
+    setCurrentView((prev) => (prev - 1 + TOTAL_VIEWS) % TOTAL_VIEWS);
+  }, [TOTAL_VIEWS]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setDirection(1);
-    setCurrentView((prev) => (prev + 1) % 4);
-  };
+    setCurrentView((prev) => (prev + 1) % TOTAL_VIEWS);
+  }, [TOTAL_VIEWS]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -156,7 +157,7 @@ function FeaturesContent() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [handlePrevious, handleNext]);
 
   const currentFeatures = FEATURES.filter((f) => f.view === currentView);
 
@@ -182,10 +183,14 @@ function FeaturesContent() {
           {/* Image Viewer */}
           {imagesLoaded && (
             <div className="relative">
+              <p id="viewer-instructions" className="sr-only">
+                Use arrow keys to navigate between views
+              </p>
               <motion.div
                 className="relative aspect-square bg-midnight rounded-xl overflow-hidden select-none"
-                role="img"
-                aria-label={t(`views.${VIEWS[currentView]}`)}
+                role="region"
+                aria-label="Product viewer"
+                aria-describedby="viewer-instructions"
               >
                 {/* Current Image */}
                 <AnimatePresence mode="wait" initial={false} custom={direction}>

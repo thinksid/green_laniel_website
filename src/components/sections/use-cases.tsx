@@ -68,6 +68,7 @@ function UseCaseContent({ tabKey }: { tabKey: string }) {
               src={imageMap[tabKey] || imageMap.greenhouse}
               alt={t('title')}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
           </div>
@@ -84,7 +85,7 @@ function UseCaseContent({ tabKey }: { tabKey: string }) {
               </h4>
               <ul className="space-y-2">
                 {applications.map((item, index) => (
-                  <li key={index} className="flex items-start gap-2">
+                  <li key={`app-${index}-${item.slice(0, 20)}`} className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
