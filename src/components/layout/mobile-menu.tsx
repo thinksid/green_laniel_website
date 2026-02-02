@@ -77,7 +77,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               {/* Bottom Section */}
               <div className="pt-6 border-t border-neutral-200 space-y-4">
                 <LanguageToggle className="justify-center" />
-                <Button href="/contact" fullWidth onClick={onClose}>
+                <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} fullWidth onClick={onClose}>
                   {t('cta')}
                 </Button>
               </div>

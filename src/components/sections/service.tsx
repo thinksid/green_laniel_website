@@ -17,7 +17,7 @@ export function Service() {
     },
     {
       icon: GraduationCap,
-      title: 'Training (1-2 hours)',
+      title: 'Training',
       description: 'Learn to read alerts and take action',
     },
     {
@@ -28,7 +28,7 @@ export function Service() {
     {
       icon: Users,
       title: 'Partnership',
-      description: "We're invested in your success",
+      description: "Long-term partnership",
     },
   ];
 
@@ -43,17 +43,17 @@ export function Service() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+        className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 max-w-7xl mx-auto"
       >
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
-            <Card key={index} variant="stat" padding="md">
-              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-forest-100 flex items-center justify-center">
-                <Icon className="w-6 h-6 text-forest-700" />
+            <Card key={index} variant="stat" padding="lg">
+              <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 rounded-full bg-forest-100 flex items-center justify-center">
+                <Icon className="w-10 h-10 md:w-12 md:h-12 text-forest-700" />
               </div>
-              <h3 className="font-semibold text-sm mb-1">{service.title}</h3>
-              <p className="text-xs text-neutral-500">{service.description}</p>
+              <h3 className="font-display text-xl md:text-2xl mb-3">{service.title}</h3>
+              <p className="text-base md:text-lg text-neutral-600">{service.description}</p>
             </Card>
           );
         })}

@@ -36,15 +36,22 @@ export default async function ContactPage({
   const t = await getTranslations('contact');
 
   return (
-    <div className="pt-20">
-      <Section>
-        <SectionHeader>
-          <SectionTitle>{t('heading')}</SectionTitle>
-          <SectionSubtitle>{t('subheadline')}</SectionSubtitle>
-        </SectionHeader>
+    <>
+      {/* Dark header background for navbar visibility */}
+      <div className="bg-brunswick-800 pt-32 pb-16">
+        <div className="container-content px-4 md:px-8 text-center">
+          <h1 className="font-display text-display-lg md:text-display-xl text-white mb-4">
+            {t('heading')}
+          </h1>
+          <p className="text-xl text-sage-200 max-w-2xl mx-auto">
+            {t('subheadline')}
+          </p>
+        </div>
+      </div>
 
+      <Section>
         <ContactForm />
       </Section>
-    </div>
+    </>
   );
 }

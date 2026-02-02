@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Section, SectionHeader, SectionTitle, SectionSubtitle } from '@/components/ui/section';
 import { Card } from '@/components/ui/card';
 
@@ -36,9 +37,15 @@ export function Guide() {
             </div>
 
             <div className="relative z-10">
-              {/* Avatar placeholder */}
-              <div className="w-20 h-20 rounded-full bg-forest-600 mb-6 flex items-center justify-center">
-                <span className="text-2xl font-display text-white">MM</span>
+              {/* Mauricio's portrait */}
+              <div className="w-20 h-20 rounded-full overflow-hidden mb-6 border-2 border-forest-500">
+                <Image
+                  src="/images/mauricio-portrait.png"
+                  alt="Mauricio Manotas"
+                  width={80}
+                  height={80}
+                  className="object-cover"
+                />
               </div>
 
               <blockquote className="text-lg md:text-xl leading-relaxed mb-6 text-forest-100">

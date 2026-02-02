@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { EyeOff, Clock, DollarSign } from 'lucide-react';
+import { EyeOff, Clock, DollarSign, Thermometer } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Card } from '@/components/ui/card';
@@ -20,26 +20,31 @@ const fadeInUp = {
   transition: { duration: 0.5 },
 };
 
-export function Stakes() {
-  const t = useTranslations('home.stakes');
+interface StakesProps {
+  page?: 'home' | 'vita1';
+}
 
-  const problems = [
-    {
-      icon: EyeOff,
-      title: t('blind.title'),
-      text: t('blind.text'),
-    },
-    {
-      icon: Clock,
-      title: t('late.title'),
-      text: t('late.text'),
-    },
-    {
-      icon: DollarSign,
-      title: t('losing.title'),
-      text: t('losing.text'),
-    },
-  ];
+export function Stakes({ page = 'home' }: StakesProps) {
+  const t = useTranslations(page === 'vita1' ? 'vita1.stakes' : 'home.stakes');
+
+  const contentConfig = {
+    home: [
+      { key: 'blind', icon: EyeOff },
+      { key: 'late', icon: Clock },
+      { key: 'losing', icon: DollarSign },
+    ],
+    vita1: [
+      { key: 'latency', icon: Clock },
+      { key: 'proxy', icon: Thermometer },
+      { key: 'blindspots', icon: EyeOff },
+    ],
+  };
+
+  const problems = contentConfig[page].map((item) => ({
+    icon: item.icon,
+    title: t(`${item.key}.title`),
+    text: t(`${item.key}.text`),
+  }));
 
   return (
     <Section variant="alt">

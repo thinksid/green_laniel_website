@@ -22,8 +22,9 @@ export function ContactForm() {
     const formData = new FormData(form);
 
     try {
-      // For Formspree - replace YOUR_FORM_ID with actual form ID
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      // Formspree form endpoint
+      const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || 'mykplgpq';
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         body: formData,
         headers: {
@@ -49,10 +50,10 @@ export function ContactForm() {
         animate={{ opacity: 1, scale: 1 }}
         className="text-center py-12"
       >
-        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-forest-100 flex items-center justify-center">
-          <CheckCircle className="w-8 h-8 text-forest-600" />
+        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-brunswick-100 flex items-center justify-center">
+          <CheckCircle className="w-8 h-8 text-brunswick-600" />
         </div>
-        <p className="text-xl font-medium text-forest-800">{t('form.success')}</p>
+        <p className="text-xl font-medium text-brunswick-800">{t('form.success')}</p>
       </motion.div>
     );
   }
@@ -76,7 +77,7 @@ export function ContactForm() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-forest-500 focus:ring-2 focus:ring-forest-500/20"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-brunswick-500 focus:ring-2 focus:ring-brunswick-500/20"
               />
             </div>
 
@@ -93,7 +94,7 @@ export function ContactForm() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-forest-500 focus:ring-2 focus:ring-forest-500/20"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-brunswick-500 focus:ring-2 focus:ring-brunswick-500/20"
               />
             </div>
           </div>
@@ -110,7 +111,7 @@ export function ContactForm() {
               <select
                 id="operationType"
                 name="operationType"
-                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 transition-all duration-200 focus:outline-none focus:border-forest-500 focus:ring-2 focus:ring-forest-500/20"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 transition-all duration-200 focus:outline-none focus:border-brunswick-500 focus:ring-2 focus:ring-brunswick-500/20"
               >
                 <option value="">&mdash;</option>
                 {Object.entries(operationOptions).map(([key, value]) => (
@@ -133,7 +134,7 @@ export function ContactForm() {
                 type="text"
                 id="crop"
                 name="crop"
-                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-forest-500 focus:ring-2 focus:ring-forest-500/20"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-brunswick-500 focus:ring-2 focus:ring-brunswick-500/20"
               />
             </div>
 
@@ -149,7 +150,7 @@ export function ContactForm() {
                 type="text"
                 id="hectares"
                 name="hectares"
-                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-forest-500 focus:ring-2 focus:ring-forest-500/20"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-brunswick-500 focus:ring-2 focus:ring-brunswick-500/20"
               />
             </div>
           </div>
@@ -166,7 +167,7 @@ export function ContactForm() {
               id="message"
               name="message"
               rows={4}
-              className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-forest-500 focus:ring-2 focus:ring-forest-500/20 resize-y min-h-[120px]"
+              className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:outline-none focus:border-brunswick-500 focus:ring-2 focus:ring-brunswick-500/20 resize-y min-h-[120px]"
             />
           </div>
 
@@ -207,20 +208,20 @@ export function ContactForm() {
       {/* Contact Info */}
       <div className="lg:col-span-1">
         <div className="bg-warmgray rounded-2xl p-6 md:p-8">
-          <h3 className="font-display text-xl text-forest-800 mb-6">
+          <h3 className="font-display text-xl text-brunswick-800 mb-6">
             {t('heading')}
           </h3>
 
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center flex-shrink-0">
-                <Mail className="w-5 h-5 text-forest-700" />
+              <div className="w-10 h-10 rounded-full bg-brunswick-100 flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-brunswick-700" />
               </div>
               <div>
                 <p className="text-sm text-neutral-500 mb-1">Email</p>
                 <a
                   href="mailto:info@greenlaniel.com"
-                  className="font-medium text-forest-700 hover:text-forest-600"
+                  className="font-medium text-brunswick-700 hover:text-brunswick-600"
                 >
                   {t('info.email')}
                 </a>
@@ -228,8 +229,8 @@ export function ContactForm() {
             </li>
 
             <li className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-5 h-5 text-forest-700" />
+              <div className="w-10 h-10 rounded-full bg-brunswick-100 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-5 h-5 text-brunswick-700" />
               </div>
               <div>
                 <p className="text-sm text-neutral-500 mb-1">Service Area</p>
@@ -238,8 +239,8 @@ export function ContactForm() {
             </li>
 
             <li className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center flex-shrink-0">
-                <Globe className="w-5 h-5 text-forest-700" />
+              <div className="w-10 h-10 rounded-full bg-brunswick-100 flex items-center justify-center flex-shrink-0">
+                <Globe className="w-5 h-5 text-brunswick-700" />
               </div>
               <div>
                 <p className="text-sm text-neutral-500 mb-1">Languages</p>

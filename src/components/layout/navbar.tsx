@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { LanguageToggle } from './language-toggle';
 import { MobileMenu } from './mobile-menu';
+import Image from 'next/image';
 
 export function Navbar() {
   const t = useTranslations('nav');
@@ -44,12 +45,19 @@ export function Navbar() {
       >
         <div className="container-content">
           <nav className="flex items-center justify-between h-16 md:h-20 px-4 md:px-8">
-            {/* Logo */}
+            {/* Logo - switches based on scroll state, larger size */}
             <Link
               href="/"
-              className="font-display text-xl md:text-2xl text-forest-800 hover:text-forest-600 transition-colors"
+              className="relative h-12 md:h-14 w-auto transition-opacity hover:opacity-80"
             >
-              Green Laniel
+              <Image
+                src={isScrolled ? '/logos/logo-green.png' : '/logos/logo-white.png'}
+                alt="Green Laniel"
+                width={220}
+                height={56}
+                className="h-full w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -61,9 +69,13 @@ export function Navbar() {
                       href={link.href}
                       className={cn(
                         'font-medium transition-colors duration-200',
-                        isActive(link.href)
-                          ? 'text-forest-700'
-                          : 'text-neutral-600 hover:text-forest-700'
+                        isScrolled
+                          ? isActive(link.href)
+                            ? 'text-brunswick-700'
+                            : 'text-neutral-600 hover:text-brunswick-700'
+                          : isActive(link.href)
+                            ? 'text-sage-300'
+                            : 'text-white hover:text-sage-300'
                       )}
                     >
                       {link.label}
@@ -72,9 +84,17 @@ export function Navbar() {
                 ))}
               </ul>
 
-              <div className="flex items-center gap-4 pl-4 border-l border-neutral-200">
-                <LanguageToggle />
-                <Button href="/contact" size="sm">
+              <div className={cn(
+                'flex items-center gap-4 pl-4 border-l transition-colors duration-200',
+                isScrolled ? 'border-neutral-200' : 'border-white/30'
+              )}>
+                <LanguageToggle isScrolled={isScrolled} />
+                <Button
+                  href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'}
+                  size="sm"
+                  variant={isScrolled ? 'primary' : 'secondary'}
+                  className={!isScrolled ? 'bg-sage-500 hover:bg-sage-400 text-brunswick-900 font-semibold' : ''}
+                >
                   {t('cta')}
                 </Button>
               </div>
@@ -83,7 +103,12 @@ export function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="md:hidden p-2 -mr-2 rounded-lg hover:bg-neutral-100 transition-colors"
+              className={cn(
+                'md:hidden p-2 -mr-2 rounded-lg transition-colors',
+                isScrolled
+                  ? 'hover:bg-neutral-100 text-neutral-800'
+                  : 'hover:bg-white/10 text-white'
+              )}
               aria-label="Open menu"
             >
               <Menu className="w-6 h-6" />

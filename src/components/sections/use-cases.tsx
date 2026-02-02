@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Check, Quote } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabPanel } from '@/components/ui/tabs';
@@ -46,6 +47,13 @@ function UseCaseContent({ tabKey }: { tabKey: string }) {
 
   const applications = t.raw('applications') as string[];
 
+  // Map tab keys to their corresponding images
+  const imageMap: Record<string, string> = {
+    greenhouse: '/images/case-tomatoes.jpeg',
+    potato: '/images/case-potato.png',
+    openField: '/images/case-berries.jpeg',
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -54,11 +62,14 @@ function UseCaseContent({ tabKey }: { tabKey: string }) {
     >
       <Card padding="lg">
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Image Placeholder */}
-          <div className="aspect-video bg-gradient-to-br from-forest-100 to-forest-200 rounded-xl flex items-center justify-center">
-            <span className="text-forest-500 font-display text-xl">
-              {t('title')}
-            </span>
+          {/* Use Case Image */}
+          <div className="aspect-video relative rounded-xl overflow-hidden bg-brunswick-100">
+            <Image
+              src={imageMap[tabKey] || imageMap.greenhouse}
+              alt={t('title')}
+              fill
+              className="object-cover"
+            />
           </div>
 
           {/* Content */}
