@@ -307,36 +307,36 @@
       "heading": "Preguntas Frecuentes",
       "items": [
         {
-          "question": "¿En qué cultivos se puede usar?",
-          "answer": "Vita 1 está validado para cultivos de alto valor, incluyendo papas (almacenamiento), arándanos, tomates, pimientos, cannabis, fresas y viñedos. Para cultivos que no están en esta lista, verificamos el estado de validación de Vivent—si están abiertos a validar tu cultivo, podemos organizar un piloto con expectativas \"beta\". Nunca implementamos en cultivos no validados; nuestra credibilidad depende de soluciones probadas."
+          "question": "¿Con qué cultivos funciona?",
+          "answer": "Vita 1 está validado para hortalizas de invernadero, bayas, papas, manzanas y uvas, con la capacidad de validar nuevos cultivos según las necesidades del agricultor."
         },
         {
           "question": "¿Se puede usar en exteriores?",
-          "answer": "Vita 1 funciona mejor en ambientes controlados o semicontrolados—invernaderos, túneles altos e instalaciones de almacenamiento. Las condiciones a campo abierto introducen demasiada variabilidad ambiental para lecturas confiables. Dicho esto, las instalaciones de almacenamiento de papa y los túneles altos son totalmente viables."
+          "answer": "Sí—los sensores son inalámbricos, funcionan con batería y son resistentes a la intemperie, lo que los hace ideales para cultivos al aire libre donde monitorear el estrés de las plantas en tiempo real es crítico."
         },
         {
           "question": "¿Notifica los cambios de estrés de manera proactiva?",
-          "answer": "Sí—ese es el valor principal. Vita 1 envía alertas en lenguaje claro (piensa en \"tus plantas enviándote mensajes de texto\") 24-48 horas antes de que aparezcan los síntomas visibles. No revisas tableros; te dice cuando algo anda mal."
+          "answer": "Sí—Vita 1 envía alertas automáticas cuando detecta estrés en las plantas. Recibirás notificaciones 24-48 horas antes de que aparezcan los síntomas visibles, dándote tiempo para actuar."
         },
         {
           "question": "¿Requiere una conexión inalámbrica?",
-          "answer": "Sí, el sistema utiliza un gateway que requiere conectividad para transmitir datos y alertas. Necesitaría confirmar las especificaciones de conectividad (WiFi, celular, etc.) con Vivent para las condiciones de tu sitio."
+          "answer": "No—los sensores funcionan de forma inalámbrica usando radio de largo alcance. Solo necesitas internet en un punto donde se ubica el gateway, no en toda tu operación, lo que lo hace ideal para áreas rurales."
         },
         {
           "question": "¿Se integra con plataformas de datos existentes?",
-          "answer": "Necesito verificar las capacidades de integración actuales con Vivent. ¿Con qué plataforma buscas conectarte? Puedo obtenerte una respuesta específica."
+          "answer": "Vita 1 viene con su propia plataforma de datos. Sin embargo, integraciones personalizadas con plataformas de datos existentes pueden ser posibles dependiendo de tu configuración."
         },
         {
           "question": "¿Están seguros mis datos?",
-          "answer": "Vivent es una empresa suiza con certificación B-Corp con más de 1,000 instalaciones en Europa. Confirmaré sus protocolos de seguridad de datos específicos y proporcionaré documentación si es necesario."
+          "answer": "Sí—tus datos son seguros y te pertenecen, protegidos por seguridad estándar de la industria y regulaciones europeas de privacidad."
         },
         {
           "question": "¿Cuál es la duración de la batería?",
-          "answer": "La vida útil del hardware es de 3-4 temporadas. Confirmaré las especificaciones de batería específicas con Vivent—¿necesitas el tiempo de ejecución entre cargas o la vida útil total del sensor?"
+          "answer": "La batería del sensor dura varios meses sin necesidad de reemplazo. También ofrecemos una versión con energía solar que extiende esta duración aún más."
         },
         {
           "question": "¿Cuántos sensores necesito?",
-          "answer": "Depende de tu entorno:\n\nInvernaderos: 8 sensores por hectárea\nCultivos de campo uniformes (almacenamiento de papa): 1-2 sensores por 2 hectáreas"
+          "answer": "Depende de tu configuración—los invernaderos pueden necesitar alrededor de 8 sensores por hectárea, mientras que los cultivos al aire libre uniformes como las papas necesitan solo 1-2 sensores por 2 hectáreas. Te ayudaremos a determinar el número exacto según tu operación."
         }
       ]
     },
