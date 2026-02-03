@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/ui/section';
 import { Button } from '@/components/ui/button';
+import { SCHEDULE_CALL_URL } from '@/lib/config';
 
 interface FinalCTAProps {
   translationKey?: string;
@@ -25,7 +26,7 @@ export function FinalCTA({ translationKey = 'home.finalCta' }: FinalCTAProps) {
         </h2>
         <p className="text-xl text-forest-200 mb-8">{t('subheadline')}</p>
         <Button
-          href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'}
+          href={SCHEDULE_CALL_URL}
           size="lg"
           className="bg-white text-forest-800 hover:bg-forest-100"
         >

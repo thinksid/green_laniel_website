@@ -75,8 +75,14 @@ export default async function RootLayout({
     <html lang={locale} className={poppins.variable}>
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-brunswick-800 focus:rounded focus:shadow-lg"
+          >
+            Skip to main content
+          </a>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

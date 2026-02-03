@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Card } from '@/components/ui/card';
+import type { CaseStudy } from '@/types/translations';
 
 // Case study images mapping
 const caseStudyImages = [
@@ -19,13 +20,7 @@ export function CaseStudies() {
   const t = useTranslations('home.caseStudies');
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const studies = t.raw('studies') as Array<{
-    title: string;
-    quote: string;
-    summary: string;
-    tags: { crop: string; size: string; useCase: string };
-    cta: string;
-  }>;
+  const studies = t.raw('studies') as CaseStudy[];
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % studies.length);
@@ -77,6 +72,7 @@ export function CaseStudies() {
                       src={caseStudyImages[currentIndex] || caseStudyImages[0]}
                       alt={studies[currentIndex].title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -116,9 +112,9 @@ export function CaseStudies() {
 
         {/* Dots */}
         <div className="flex justify-center gap-2 mt-6">
-          {studies.map((_, index) => (
+          {studies.map((study, index) => (
             <button
-              key={index}
+              key={`case-study-dot-${index}-${study.title}`}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-colors ${
                 index === currentIndex ? 'bg-brunswick-700' : 'bg-brunswick-300'

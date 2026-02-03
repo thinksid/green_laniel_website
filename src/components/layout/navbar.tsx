@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { LanguageToggle } from './language-toggle';
 import { MobileMenu } from './mobile-menu';
 import Image from 'next/image';
+import { SCHEDULE_CALL_URL } from '@/lib/config';
 
 export function Navbar() {
   const t = useTranslations('nav');
@@ -74,8 +75,8 @@ export function Navbar() {
                             ? 'text-brunswick-700'
                             : 'text-neutral-600 hover:text-brunswick-700'
                           : isActive(link.href)
-                            ? 'text-sage-300'
-                            : 'text-white hover:text-sage-300'
+                            ? 'text-sage-200'
+                            : 'text-white hover:text-sage-200'
                       )}
                     >
                       {link.label}
@@ -90,7 +91,7 @@ export function Navbar() {
               )}>
                 <LanguageToggle isScrolled={isScrolled} />
                 <Button
-                  href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'}
+                  href={SCHEDULE_CALL_URL}
                   size="sm"
                   variant={isScrolled ? 'primary' : 'secondary'}
                   className={!isScrolled ? 'bg-sage-500 hover:bg-sage-400 text-brunswick-900 font-semibold' : ''}

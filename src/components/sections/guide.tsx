@@ -69,7 +69,7 @@ export function Guide() {
           className="grid grid-cols-2 gap-4"
         >
           {stats.map((stat, index) => (
-            <Card key={index} variant="stat" padding="md">
+            <Card key={`stat-${index}-${stat.label}`} variant="stat" padding="md">
               <p className="font-display text-display-sm text-forest-700 mb-1">
                 {stat.value}
               </p>

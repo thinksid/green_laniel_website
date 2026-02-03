@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
+import { SCHEDULE_CALL_URL } from '@/lib/config';
 
 export function Hero() {
   const t = useTranslations('home.hero');
@@ -55,7 +56,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button href={process.env.NEXT_PUBLIC_SCHEDULE_CALL_URL || '/contact'} size="lg">
+          <Button href={SCHEDULE_CALL_URL} size="lg">
             {t('primaryCta')}
           </Button>
           <Button

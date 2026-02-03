@@ -5,20 +5,7 @@ import { EyeOff, Clock, DollarSign, Thermometer } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Card } from '@/components/ui/card';
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 },
-};
+import { staggerContainer, fadeInUp } from '@/lib/animations';
 
 interface StakesProps {
   page?: 'home' | 'vita1';
@@ -62,7 +49,7 @@ export function Stakes({ page = 'home' }: StakesProps) {
         {problems.map((problem, index) => {
           const Icon = problem.icon;
           return (
-            <motion.div key={index} variants={fadeInUp}>
+            <motion.div key={`problem-${index}-${problem.title}`} variants={fadeInUp}>
               <Card className="h-full text-center">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-forest-100 flex items-center justify-center">
                   <Icon className="w-8 h-8 text-forest-700" />
