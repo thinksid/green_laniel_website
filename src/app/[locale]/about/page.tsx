@@ -5,6 +5,8 @@ import { Mauricio } from '@/components/sections/mauricio';
 import { FourBridges } from '@/components/sections/four-bridges';
 import { Vivent } from '@/components/sections/vivent';
 import { FinalCTA } from '@/components/sections/final-cta';
+import { generateMetadata as genMeta, defaultKeywords } from '@/lib/seo/metadata';
+import { getBreadcrumbSchema, generateJsonLd } from '@/lib/seo/structured-data';
 
 export async function generateMetadata({
   params,
@@ -14,19 +16,47 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: 'About Green Laniel - The Bridge to Better Growing',
-    es: 'Sobre Green Laniel - El Puente Hacia un Mejor Cultivo',
+    en: 'About Green Laniel - Swiss Precision, American Service',
+    es: 'Sobre Green Laniel - Precisión Suiza, Servicio Americano',
   };
 
   const descriptions: Record<string, string> = {
-    en: 'Swiss precision meets American service. Learn about our mission to bridge the gap between cutting-edge technology and practical farming.',
-    es: 'La precisión suiza se encuentra con el servicio americano. Conoce nuestra misión de cerrar la brecha entre la tecnología de vanguardia y la agricultura práctica.',
+    en: 'Green Laniel is the exclusive Americas distributor of Vivent plant biosignal technology. Founded by Mauricio Manotas with 30 years of agricultural experience across Colombia, Canada, and the US. B-Corp certified partner bringing Swiss precision to American fields.',
+    es: 'Green Laniel es el distribuidor exclusivo en las Américas de la tecnología de bioseñales vegetales Vivent. Fundado por Mauricio Manotas con 30 años de experiencia agrícola en Colombia, Canadá y Estados Unidos. Socio certificado B-Corp que lleva la precisión suiza a los campos americanos.',
   };
 
-  return {
+  const aboutKeywords = {
+    en: [
+      'Green Laniel',
+      'Mauricio Manotas',
+      'Vivent distributor',
+      'agricultural technology company',
+      'B-Corp agriculture',
+      'Swiss agricultural technology',
+      'American agricultural service',
+      'precision farming company',
+      'plant monitoring experts',
+    ],
+    es: [
+      'Green Laniel',
+      'Mauricio Manotas',
+      'distribuidor Vivent',
+      'empresa de tecnología agrícola',
+      'agricultura B-Corp',
+      'tecnología agrícola suiza',
+      'servicio agrícola americano',
+      'empresa de agricultura de precisión',
+      'expertos en monitoreo de plantas',
+    ],
+  };
+
+  return genMeta({
     title: titles[locale] || titles.en,
     description: descriptions[locale] || descriptions.en,
-  };
+    path: '/about',
+    locale: locale as 'en' | 'es',
+    keywords: locale === 'es' ? aboutKeywords.es : aboutKeywords.en,
+  });
 }
 
 export default async function AboutPage({
@@ -37,8 +67,26 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Generate breadcrumb schema
+  const breadcrumbSchema = getBreadcrumbSchema([
+    {
+      name: locale === 'es' ? 'Inicio' : 'Home',
+      url: `https://greenlaniel.com${locale === 'es' ? '/es' : ''}`,
+    },
+    {
+      name: locale === 'es' ? 'Sobre Nosotros' : 'About',
+      url: `https://greenlaniel.com${locale === 'es' ? '/es' : ''}/about`,
+    },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: generateJsonLd(breadcrumbSchema),
+        }}
+      />
       <AboutHero />
       <Mauricio />
       <FourBridges />

@@ -12,7 +12,7 @@ import type { CaseStudy } from '@/types/translations';
 // Case study images mapping
 const caseStudyImages = [
   '/images/case-ornamentals.png',  // Texas Greenhouse - Ornamentals
-  '/images/case-potato.png',       // Frito-Lay/PepsiCo - Potatoes
+  '/images/case-potato.png',       // Leading Potato CPG Brand
   '/images/case-blueberries.png',  // Colombia - Blueberries
 ];
 
