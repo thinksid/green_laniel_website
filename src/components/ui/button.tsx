@@ -53,6 +53,17 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     if (href) {
+      // Check if URL is external
+      const isExternal = href.startsWith('http://') || href.startsWith('https://') || href.includes('://');
+
+      if (isExternal) {
+        return (
+          <a href={href} className={baseStyles} target="_blank" rel="noopener noreferrer">
+            {children}
+          </a>
+        );
+      }
+
       return (
         <Link href={href} className={baseStyles}>
           {children}

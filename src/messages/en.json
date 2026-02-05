@@ -347,36 +347,36 @@
       "heading": "Frequently Asked Questions",
       "items": [
         {
-          "question": "What cultivars can it be used on?",
-          "answer": "Vita 1 is validated for high-value crops including potatoes (storage), blueberries, tomatoes, peppers, cannabis, strawberries, and vineyards. For crops not on this list, we check Vivent's validation status—if they're open to validating your crop, we can arrange a pilot with \"beta\" expectations. We never deploy on unvalidated crops; our credibility depends on proven solutions."
+          "question": "What crops does it work with?",
+          "answer": "Vita 1 is validated for greenhouse vegetables, berries, potatoes, apples, and grapes, with the ability to validate new crops based on grower needs."
         },
         {
           "question": "Can it be used outdoors?",
-          "answer": "Vita 1 performs best in controlled or semi-controlled environments—greenhouses, high tunnels, and storage facilities. Open-field conditions introduce too much environmental variability for reliable readings. That said, potato storage facilities and high tunnels are fair game."
+          "answer": "Yes—the sensors are wireless, battery-powered, and weatherproof, making them ideal for outdoor crops where monitoring plant stress in real-time is critical."
         },
         {
           "question": "Does it notify stress changes proactively?",
-          "answer": "Yes—this is the core value. Vita 1 sends plain-English alerts (think \"your plants texting you\") 24-48 hours before visible symptoms appear. You don't check dashboards; it tells you when something's wrong."
+          "answer": "Yes—Vita 1 sends automatic alerts when it detects plant stress. You'll be notified 24-48 hours before visible symptoms appear, giving you time to act."
         },
         {
           "question": "Does it require a wireless connection?",
-          "answer": "Yes, the system uses a gateway that requires connectivity to transmit data and alerts. I'd need to confirm specific connectivity specs (WiFi, cellular, etc.) with Vivent for your site conditions."
+          "answer": "No—the sensors work wirelessly using a long-range radio. You only need internet at one spot where the gateway sits, not throughout your entire operation, making it ideal for rural areas."
         },
         {
           "question": "Does it integrate with existing data platforms?",
-          "answer": "I need to verify current integration capabilities with Vivent. What platform are you looking to connect with? I can get you a specific answer."
+          "answer": "Vita 1 comes with its own data platform. However, custom integrations with existing data platforms may be possible depending on your setup."
         },
         {
           "question": "Is my data safe?",
-          "answer": "Vivent is a B-Corp certified Swiss company with 1,000+ European installations. I'll confirm their specific data security protocols and provide documentation if needed."
+          "answer": "Yes—your data is secure and belongs to you, protected by industry-standard security and European privacy regulations."
         },
         {
           "question": "What is the battery lifetime?",
-          "answer": "Hardware lifespan is 3-4 seasons. I'll confirm specific battery specs with Vivent—do you need runtime between charges or total sensor lifetime?"
+          "answer": "Battery on the sensor lasts for several months without need of replacing. We also offer a solar-powered version that extends this lifetime even further."
         },
         {
           "question": "How many sensors do I need?",
-          "answer": "Depends on your environment:\n\nGreenhouses: 8 sensors per hectare\nUniform field crops (potato storage): 1-2 sensors per 2 hectares"
+          "answer": "It depends on your setup—greenhouses may need about 8 sensors per hectare, while uniform outdoor crops like potatoes need just 1-2 sensors per 2 hectares. We'll help you determine the exact number based on your operation."
         }
       ]
     },

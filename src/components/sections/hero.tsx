@@ -30,7 +30,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="font-display text-display-lg md:text-display-xl mb-12">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-display-lg lg:text-display-xl mb-8 md:mb-12 px-4">
             <span className="block">{t('headline')}</span>
             <span className="block text-forest-300">{t('headlineLine2')}</span>
           </h1>
@@ -42,10 +42,10 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-3xl mx-auto mb-12"
         >
-          <p className="text-xl md:text-2xl text-forest-200 mb-2 whitespace-nowrap">
+          <p className="text-lg sm:text-xl md:text-2xl text-forest-200 mb-2 px-4">
             {t('subheadline')}
           </p>
-          <p className="text-xl md:text-2xl text-white font-semibold">
+          <p className="text-lg sm:text-xl md:text-2xl text-white font-semibold px-4">
             {t('subheadline2')}
           </p>
         </motion.div>
