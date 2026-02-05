@@ -76,14 +76,6 @@ export function getWebSiteSchema(locale: 'en' | 'es'): WebSite {
       '@id': `${BASE_URL}/#organization`,
     },
     inLanguage: [locale === 'es' ? 'es-ES' : 'en-US'],
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${BASE_URL}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
