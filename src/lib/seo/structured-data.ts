@@ -144,14 +144,6 @@ export function getProductSchema(locale: 'en' | 'es'): Product {
     },
     category: 'Agricultural Equipment',
     applicationCategory: ['Precision Agriculture', 'Plant Monitoring', 'Agricultural IoT'],
-    audience: {
-      '@type': 'Audience',
-      audienceType: 'Agricultural Businesses',
-      geographicArea: {
-        '@type': 'Place',
-        name: 'Americas',
-      },
-    },
   };
 }
 
