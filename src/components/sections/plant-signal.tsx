@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Leaf, Cpu, MessageSquare } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { Section, SectionHeader, SectionTitle, SectionSubtitle } from '@/components/ui/section';
+import Image from 'next/image';
+import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { staggerContainer, fadeInUp } from '@/lib/animations';
 
 const stepIcons = [Leaf, Cpu, MessageSquare];
@@ -21,7 +22,6 @@ export function PlantSignal() {
     <Section variant="alt">
       <SectionHeader>
         <SectionTitle>{t('heading')}</SectionTitle>
-        <SectionSubtitle>{t('subheading')}</SectionSubtitle>
       </SectionHeader>
 
       <motion.div
@@ -54,31 +54,31 @@ export function PlantSignal() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-neutral-600 text-lg mb-4">{step.description}</p>
-
-                {/* Number at bottom */}
-                <div className="w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center mt-auto">
-                  <span className="text-sm font-medium text-forest-600">
-                    {step.number}
-                  </span>
-                </div>
+                <p className="text-neutral-600 text-lg">{step.description}</p>
               </div>
             </motion.div>
           );
         })}
       </motion.div>
 
-      {/* Callout */}
+      {/* Dashboard Mockup */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.4 }}
-        className="bg-forest-50 border-l-4 border-forest-600 p-6 rounded-r-lg"
+        transition={{ delay: 0.3 }}
+        whileHover={{ y: -8 }}
+        className="max-w-4xl mx-auto transition-shadow duration-300 rounded-2xl hover:shadow-2xl"
       >
-        <p className="text-lg text-forest-900 font-medium">
-          {t('callout')}
-        </p>
+        <div className="relative aspect-video rounded-2xl overflow-hidden">
+          <Image
+            src="/images/laptop_mockup2.png"
+            alt="Vita 1 Dashboard"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+            className="object-contain"
+          />
+        </div>
       </motion.div>
     </Section>
   );

@@ -13,14 +13,14 @@ const partners = [
     url: 'https://www.vivent-biosignals.com',
   },
   {
-    name: 'B Corp',
-    logo: '/images/partners/bcorp-logo.png',
-    url: null,
+    name: 'Green Spec',
+    logo: '/images/partners/greenspec-logo.svg',
+    url: 'https://www.greenspec.nl/home',
   },
   {
-    name: 'Agroscope',
-    logo: '/images/partners/agroscope-logo.png',
-    url: null,
+    name: 'ISII',
+    logo: '/images/partners/izii-logo.avif',
+    url: 'https://www.isii-nitzan.swiss/',
   },
 ];
 
@@ -47,9 +47,9 @@ export function Vivent() {
               const LogoImage = (
                 <div
                   key={index}
-                  className="relative h-20 w-40 md:h-24 md:w-48 grayscale opacity-40 hover:opacity-60 transition-opacity"
+                  className="relative h-20 w-40 md:h-24 md:w-48 opacity-70 hover:opacity-100 transition-opacity"
                   style={{
-                    filter: 'grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(50%)',
+                    filter: 'brightness(0) saturate(100%) invert(16%) sepia(20%) saturate(1200%) hue-rotate(107deg) brightness(98%) contrast(95%)',
                   }}
                 >
                   <Image

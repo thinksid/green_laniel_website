@@ -19,7 +19,7 @@ interface Feature {
   descriptionKey: string;
 }
 
-const VIEWS = ['front', 'back', 'side', 'laptop'] as const;
+const VIEWS = ['front', 'back', 'side'] as const;
 
 // Feature hotspots for each view (reduced to 3 views)
 const FEATURES: Feature[] = [
@@ -100,12 +100,11 @@ function FeaturesContent() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [direction, setDirection] = useState(0); // 1 for right, -1 for left
 
-  // Image paths (4 views: front, back, side, laptop)
+  // Image paths (3 views: front, back, side)
   const images = [
     '/vita-1-front.png',
     '/vita-1-back.png',
     '/vita-1-left.png',
-    '/images/laptop_mockup2.png',
   ];
 
   const TOTAL_VIEWS = VIEWS.length;
