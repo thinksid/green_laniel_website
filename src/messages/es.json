@@ -73,8 +73,8 @@
           "label": "horas, no días"
         },
         "bcorp": {
-          "value": "Soporte",
-          "label": "Experto Inmediato"
+          "value": "El Puente",
+          "label": "Entre UE y EE.UU."
         }
       }
     },
@@ -107,7 +107,7 @@
           "quote": "Los calentadores marcaban 15°C. Las plantas estaban a 2°C.",
           "summary": "Un invernadero en Texas detectó una falla de equipo que los sensores no vieron, previniendo una pérdida catastrófica de cultivos durante la tormenta invernal del '26.",
           "tags": {
-            "crop": "Tomates",
+            "crop": "Ornamentales",
             "size": "~5-10ha",
             "useCase": "Falla de equipos"
           },
@@ -182,15 +182,15 @@
       "stressors": [
         {
           "title": "Desperdicio de Agua",
-          "description": "Operar bombas diesel cuando tus plantas ya están llenas desperdicia combustible, agua y dinero. Vita 1 te dice el momento en que tus plantas dejan de beber."
+          "description": "Operar bombas cuando tus plantas ya están llenas desperdicia combustible, agua y dinero.\n\n**Vita 1 te dice el momento en que tus plantas dejan de beber.**"
         },
         {
           "title": "Lixiviación de Nutrientes",
-          "description": "El riego excesivo durante la iniciación de tubérculos o fases críticas de crecimiento lixivia nitrógeno costoso y aumenta la presión de enfermedades. Las señales de la planta muestran cuándo parar—antes de que sea tarde."
+          "description": "El riego excesivo durante la iniciación de tubérculos o fases críticas de crecimiento lixivia nitrógeno costoso y aumenta la presión de enfermedades.\n\n**Las señales de la planta muestran cuándo parar.**"
         },
         {
-          "title": "Detección Temprana de Enfermedades/Plagas",
-          "description": "El estrés abre la puerta a plagas y enfermedades. Detecta las señales de estrés temprano—antes de que aparezcan los síntomas—para prevenir brotes."
+          "title": "Plagas y Enfermedades",
+          "description": "El estrés de las plantas abre la puerta a plagas y enfermedades. Al detectar las señales de estrés temprano, puedes actuar a tiempo.\n\n**Previene brotes antes de que aparezcan los síntomas.**"
         }
       ]
     },
@@ -256,17 +256,17 @@
         {
           "number": "1",
           "title": "La Planta Habla",
-          "description": "Vita 1 se sujeta al tallo y lee bioseñales eléctricas—la respuesta de estrés de la planta en tiempo real."
+          "description": "Vita 1 se sujeta al tallo y lee bioseñales eléctricas."
         },
         {
           "number": "2",
           "title": "Procesamiento de Señal",
-          "description": "Los sensores de ingeniería suiza interpretan las señales y las traducen en conocimientos accionables."
+          "description": "La tecnología Vita 1 interpreta las señales y las traduce en conocimientos accionables."
         },
         {
           "number": "3",
           "title": "Recibes Alertas",
-          "description": "Notificaciones en lenguaje sencillo te dicen exactamente qué está mal y dónde—sin paneles que revisar, la planta te escribe."
+          "description": "Notificaciones en lenguaje sencillo te dicen exactamente qué está bien/mal y dónde."
         }
       ],
       "callout": "Los sensores tradicionales miden el ambiente alrededor de tus plantas. Vita 1 mide lo que está sucediendo dentro de ellas."
@@ -274,19 +274,19 @@
     "useCases": {
       "heading": "Casos de Uso",
       "tabs": {
-        "greenhouse": "Invernaderos",
+        "ornamentals": "Ornamentales",
         "potato": "Almacén de Papa",
-        "openField": "Campo Abierto"
+        "blueberries": "Arándanos"
       },
-      "greenhouse": {
-        "title": "INVERNADERO / TÚNEL ALTO",
+      "ornamentals": {
+        "title": "ORNAMENTALES",
         "applications": [
-          "Optimización de riego basada en necesidades reales de la planta",
           "Alertas de estrés por frío/calor antes de daño visible",
-          "Detección de fallas de equipos (calentadores, ventiladores, riego)"
+          "Detección de fallas de equipos (calentadores, ventiladores, riego)",
+          "Optimización de riego basada en necesidades reales de la planta"
         ],
         "setup": "Configuración Típica: 8 sensores por hectárea",
-        "bestFor": "Ideal Para: Tomates, pimientos, frutos rojos, cannabis",
+        "bestFor": "Ideal Para: Plantas ornamentales, flores, viveros",
         "result": {
           "quote": "Los sensores marcaban 15°C. Las plantas experimentaron 2°C por más de 10 horas. Detectamos la falla del calentador antes de una pérdida catastrófica.",
           "attribution": "— Invernadero de Texas"
@@ -306,18 +306,18 @@
           "attribution": "— Frito-Lay"
         }
       },
-      "openField": {
-        "title": "CAMPO ABIERTO (FRUTOS ROJOS)",
+      "blueberries": {
+        "title": "ARÁNDANOS",
         "applications": [
-          "Monitoreo de estrés por humedad",
-          "Correlación de presión de plagas",
+          "Monitoreo de estrés hídrico y riego",
+          "Detección de goteros obstruidos antes de daño a las plantas",
           "Consistencia de calidad para precios premium"
         ],
         "setup": "Configuración Típica: 4-8 sensores por hectárea",
-        "bestFor": "Ideal Para: Arándanos, fresas",
+        "bestFor": "Ideal Para: Arándanos",
         "result": {
-          "quote": "La noticia se esparció tan rápido que recibimos llamadas cada dos días. Nos invitaron a presentar en la conferencia nacional.",
-          "attribution": "— Productor de Fresas de Colombia"
+          "quote": "Detectamos goteros obstruidos antes de daño permanente.",
+          "attribution": "— Productor de Arándanos de Colombia"
         }
       }
     },
@@ -407,7 +407,7 @@
     },
     "vivent": {
       "heading": "Nuestros Socios Tecnológicos",
-      "description": "Vivent Biosignals es el líder mundial en electrofisiología vegetal, con sede en Suiza. Con más de 1,000 instalaciones en Europa y validación de Agroscope (investigación agrícola federal suiza), representan el estándar de oro en tecnología de monitoreo de plantas.",
+      "description": "Nos vinculamos con socios europeos de clase mundial para traer tecnología de punta al contexto americano. En Green Laniel, la mejor tecnología agrícola se encuentra con nuestros 30+ años de experiencia en campos americanos.",
       "note": "Green Laniel es el distribuidor exclusivo para las Américas, proporcionando instalación localizada, capacitación y soporte.",
       "partnersLabel": "Confiado Por y Asociado Con"
     },
@@ -439,7 +439,7 @@
       "error": "Algo salió mal. Por favor intenta de nuevo."
     },
     "info": {
-      "email": "info@greenlaniel.com",
+      "email": "mauricio@greenlaniel.com",
       "serving": "Servicio: Norte y Sur América",
       "languages": "Idiomas: Inglés y Español",
       "note": "Respondemos en menos de 24 horas. Usualmente mucho más rápido."

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { Button } from '@/components/ui/button';
@@ -10,9 +10,11 @@ import { ImageModal } from '@/components/ui/image-modal';
 
 export function Explainer() {
   const t = useTranslations('home.explainer');
+  const locale = useLocale();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const paragraphs = t.raw('paragraphs') as string[];
+  const diagramSrc = locale === 'es' ? '/images/diagram-es.png' : '/images/diagram.png';
 
   return (
     <Section id="explainer">
@@ -34,7 +36,7 @@ export function Explainer() {
             onClick={() => setIsModalOpen(true)}
           >
             <Image
-              src="/images/diagram.png"
+              src={diagramSrc}
               alt="How Vita 1 works diagram"
               width={1600}
               height={900}
@@ -69,11 +71,12 @@ export function Explainer() {
       <ImageModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        imageSrc="/images/diagram.png"
+        imageSrc={diagramSrc}
         imageAlt="How Vita 1 works diagram"
         width={1600}
         height={900}
         className="max-w-6xl"
+        backgroundColor="white"
       />
     </Section>
   );

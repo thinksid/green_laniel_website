@@ -12,9 +12,9 @@ export function UseCases() {
   const t = useTranslations('vita1.useCases');
 
   const tabs = [
-    { id: 'greenhouse', label: t('tabs.greenhouse') },
+    { id: 'ornamentals', label: t('tabs.ornamentals') },
     { id: 'potato', label: t('tabs.potato') },
-    { id: 'openField', label: t('tabs.openField') },
+    { id: 'blueberries', label: t('tabs.blueberries') },
   ];
 
   return (
@@ -23,17 +23,17 @@ export function UseCases() {
         <SectionTitle>{t('heading')}</SectionTitle>
       </SectionHeader>
 
-      <Tabs tabs={tabs} defaultTab="greenhouse">
+      <Tabs tabs={tabs} defaultTab="ornamentals">
         {(activeTab) => (
           <>
-            <TabPanel id="greenhouse" activeTab={activeTab}>
-              <UseCaseContent tabKey="greenhouse" />
+            <TabPanel id="ornamentals" activeTab={activeTab}>
+              <UseCaseContent tabKey="ornamentals" />
             </TabPanel>
             <TabPanel id="potato" activeTab={activeTab}>
               <UseCaseContent tabKey="potato" />
             </TabPanel>
-            <TabPanel id="openField" activeTab={activeTab}>
-              <UseCaseContent tabKey="openField" />
+            <TabPanel id="blueberries" activeTab={activeTab}>
+              <UseCaseContent tabKey="blueberries" />
             </TabPanel>
           </>
         )}
@@ -49,9 +49,9 @@ function UseCaseContent({ tabKey }: { tabKey: string }) {
 
   // Map tab keys to their corresponding images
   const imageMap: Record<string, string> = {
-    greenhouse: '/images/case-tomatoes.jpeg',
+    ornamentals: '/images/case-ornamentals.png',
     potato: '/images/case-potato.png',
-    openField: '/images/case-berries.jpeg',
+    blueberries: '/images/case-blueberries.png',
   };
 
   return (

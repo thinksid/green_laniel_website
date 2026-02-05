@@ -73,8 +73,8 @@
           "label": "hours, not days"
         },
         "bcorp": {
-          "value": "Same-Day",
-          "label": "Expert Support"
+          "value": "The Bridge",
+          "label": "Between EU and USA"
         }
       }
     },
@@ -107,7 +107,7 @@
           "quote": "The heaters said 60°F. The plants were at 35°F.",
           "summary": "A Texas greenhouse caught an equipment malfunction that sensors missed, preventing catastrophic crop loss during the '26 winter storm.",
           "tags": {
-            "crop": "Tomatoes",
+            "crop": "Ornamentals",
             "size": "~5-10ha",
             "useCase": "Equipment failure"
           },
@@ -182,15 +182,15 @@
       "stressors": [
         {
           "title": "Water Waste",
-          "description": "Running diesel pumps when your plants are already full wastes fuel, water, and money. Vita 1 tells you the moment your plants stop drinking."
+          "description": "Running pumps when your plants are already full wastes fuel, water, and money.\n\n**Vita 1 tells you the moment your plants stop drinking.**"
         },
         {
           "title": "Nutrient Leaching",
-          "description": "Over-irrigating during tuber initiation or critical growth phases leaches expensive nitrogen and increases disease pressure. Plant signals show when to stop—before it's too late."
+          "description": "Over-irrigating during tuber initiation or critical growth phases leaches expensive nitrogen and increases disease pressure.\n\n**Plant signals show when to stop.**"
         },
         {
-          "title": "Early Disease/Pest Detection",
-          "description": "Stress opens the door for pests and disease. Catch the stress signals early—before symptoms appear—to prevent outbreaks."
+          "title": "Pests and Diseases",
+          "description": "Plant stress opens the door for pests and disease. By catching stress signals early, you can act on time.\n\n**Prevent outbreaks before symptoms appear.**"
         }
       ]
     },
@@ -256,17 +256,17 @@
         {
           "number": "1",
           "title": "The Plant Speaks",
-          "description": "Vita 1 clips onto the stem and reads electrical biosignals—the plant's real-time stress response."
+          "description": "Vita 1 clips onto the stem and reads electrical biosignals."
         },
         {
           "number": "2",
           "title": "Signal Processing",
-          "description": "Swiss-engineered sensors interpret the signals and translate them into actionable insights."
+          "description": "Vita 1 tech interprets the signals and translates them into actionable insights."
         },
         {
           "number": "3",
           "title": "You Get Alerts",
-          "description": "Plain-English notifications tell you exactly what's wrong and where—no dashboards to check, the plant texts you."
+          "description": "Plain-English notifications tell you exactly what's right/wrong and where."
         }
       ],
       "callout": "Traditional sensors measure the environment around your plants. Vita 1 measures what's happening inside them."
@@ -274,19 +274,19 @@
     "useCases": {
       "heading": "Use Cases",
       "tabs": {
-        "greenhouse": "Greenhouses",
+        "ornamentals": "Ornamentals",
         "potato": "Potato Storage",
-        "openField": "Open Field"
+        "blueberries": "Blueberries"
       },
-      "greenhouse": {
-        "title": "GREENHOUSE / HIGH TUNNEL",
+      "ornamentals": {
+        "title": "ORNAMENTALS",
         "applications": [
-          "Irrigation optimization based on actual plant needs",
           "Cold/heat stress alerts before visible damage",
-          "Equipment failure detection (heaters, fans, irrigation)"
+          "Equipment failure detection (heaters, fans, irrigation)",
+          "Irrigation optimization based on actual plant needs"
         ],
         "setup": "Typical Setup: 8 sensors per hectare",
-        "bestFor": "Best For: Tomatoes, peppers, berries, cannabis",
+        "bestFor": "Best For: Ornamental plants, flowers, nursery stock",
         "result": {
           "quote": "Sensors said 60°F. Plants experiencing 35°F for 10+ hours. Caught heater failure before catastrophic loss.",
           "attribution": "— Texas Greenhouse"
@@ -306,18 +306,18 @@
           "attribution": "— Frito-Lay"
         }
       },
-      "openField": {
-        "title": "OPEN FIELD (BERRIES)",
+      "blueberries": {
+        "title": "BLUEBERRIES",
         "applications": [
-          "Humidity stress monitoring",
-          "Pest pressure correlation",
+          "Water stress and irrigation monitoring",
+          "Clogged dripper detection before plant damage",
           "Quality consistency for premium pricing"
         ],
         "setup": "Typical Setup: 4-8 sensors per hectare",
-        "bestFor": "Best For: Blueberries, strawberries",
+        "bestFor": "Best For: Blueberries",
         "result": {
-          "quote": "Word spread so fast we get calls every other day. Invited to present at national conference.",
-          "attribution": "— Colombia Strawberry Grower"
+          "quote": "We caught clogged drippers before permanent damage.",
+          "attribution": "— Colombia Blueberry Grower"
         }
       }
     },
@@ -407,7 +407,7 @@
     },
     "vivent": {
       "heading": "Our Technology Partners",
-      "description": "Vivent Biosignals is the world leader in plant electrophysiology, headquartered in Switzerland. With 1,000+ installations across Europe and validation from Agroscope (Swiss federal agricultural research), they represent the gold standard in plant monitoring technology.",
+      "description": "We partner with world class European partners to bring spearhead technology to the American context. At Green Laniel, the best agricultural technology meets our 30+ year field experience in American fields.",
       "note": "Green Laniel is the exclusive Americas distributor, providing localized installation, training, and support.",
       "partnersLabel": "Trusted By & Partnered With"
     },
@@ -439,7 +439,7 @@
       "error": "Something went wrong. Please try again."
     },
     "info": {
-      "email": "info@greenlaniel.com",
+      "email": "mauricio@greenlaniel.com",
       "serving": "Serving: North & South America",
       "languages": "Languages: English & Spanish",
       "note": "We respond within 24 hours. Usually much faster."

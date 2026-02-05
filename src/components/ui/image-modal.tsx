@@ -12,6 +12,7 @@ export interface ImageModalProps {
   width?: number;
   height?: number;
   className?: string;
+  backgroundColor?: string;
 }
 
 export function ImageModal({
@@ -22,6 +23,7 @@ export function ImageModal({
   width = 750,
   height = 1334,
   className = '',
+  backgroundColor,
 }: ImageModalProps) {
   return (
     <AnimatePresence>
@@ -38,6 +40,7 @@ export function ImageModal({
             animate={{ scale: 1 }}
             exit={{ scale: 0.9 }}
             className={`relative max-w-4xl w-full max-h-[90vh] ${className}`}
+            style={backgroundColor ? { backgroundColor } : undefined}
             onClick={(e) => e.stopPropagation()}
           >
             <Image

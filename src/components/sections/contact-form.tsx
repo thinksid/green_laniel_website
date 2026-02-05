@@ -220,7 +220,7 @@ export function ContactForm() {
               <div>
                 <p className="text-sm text-neutral-500 mb-1">Email</p>
                 <a
-                  href="mailto:info@greenlaniel.com"
+                  href="mailto:mauricio@greenlaniel.com"
                   className="font-medium text-brunswick-700 hover:text-brunswick-600"
                 >
                   {t('info.email')}

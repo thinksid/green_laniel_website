@@ -11,9 +11,9 @@ import type { CaseStudy } from '@/types/translations';
 
 // Case study images mapping
 const caseStudyImages = [
-  '/images/case-tomatoes.jpeg',   // Texas Greenhouse - Tomatoes
-  '/images/case-potato.png',      // Frito-Lay/PepsiCo - Potatoes
-  '/images/case-berries.jpeg',    // Colombia - Berries
+  '/images/case-ornamentals.png',  // Texas Greenhouse - Ornamentals
+  '/images/case-potato.png',       // Frito-Lay/PepsiCo - Potatoes
+  '/images/case-blueberries.png',  // Colombia - Blueberries
 ];
 
 export function CaseStudies() {
@@ -116,9 +116,8 @@ export function CaseStudies() {
             <button
               key={`case-study-dot-${index}-${study.title}`}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                index === currentIndex ? 'bg-brunswick-700' : 'bg-brunswick-300'
-              }`}
+              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? 'bg-brunswick-700' : 'bg-brunswick-300'
+                }`}
               aria-label={`Go to case study ${index + 1}`}
             />
           ))}
