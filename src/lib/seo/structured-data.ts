@@ -142,8 +142,6 @@ export function getProductSchema(locale: 'en' | 'es'): Product {
         },
       ],
     },
-    category: 'Agricultural Equipment',
-    applicationCategory: ['Precision Agriculture', 'Plant Monitoring', 'Agricultural IoT'],
   };
 }
 
@@ -188,7 +186,6 @@ export function getLocalBusinessSchema(locale: 'en' | 'es'): LocalBusiness {
     '@id': `${BASE_URL}/#localbusiness`,
     name: 'Green Laniel',
     image: `${BASE_URL}/logos/green-laniel.svg`,
-    '@id': `${BASE_URL}`,
     url: BASE_URL,
     telephone: '+1-XXX-XXX-XXXX', // Update with actual phone if available
     email: 'mauricio@greenlaniel.com',
