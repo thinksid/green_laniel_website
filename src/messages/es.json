@@ -9,8 +9,8 @@
     "hero": {
       "headline": "Tus Plantas Están Hablando.",
       "headlineLine2": "¿Las Estás Escuchando?",
-      "subheadline": "Detecta señales de estrés 24-48 horas antes de los síntomas visibles.",
-      "subheadline2": "Cambia la imprevisibilidad por certeza.",
+      "subheadline": "Monitorea estrés de agua, temperatura y nutrientes en tiempo real, directamente desde la planta.",
+      "subheadline2": "Deja de reaccionar. Empieza a prevenir.",
       "primaryCta": "Agenda una Llamada",
       "secondaryCta": "Ver Cómo Funciona"
     },
@@ -45,18 +45,18 @@
         "Identifica estrés por frío/calor invisible",
         "Previene deterioro en almacenamiento"
       ],
-      "optimizersHeading": "OPTIMIZACIÓN DE RENDIMIENTO",
+      "optimizersHeading": "REDUCE COSTOS DE DIESEL Y NITRÓGENO",
       "optimizers": [
-        "Pronostica eventos de estrés con semanas de anticipación",
-        "Reduce costos de insumos 30-50%",
-        "Mejora rendimientos y consistencia de calidad"
+        "Apaga las bombas en el momento que las plantas están llenas—ahorra diesel y agua",
+        "Validación en tiempo real de la absorción de nitrógeno (no más suposiciones en aplicaciones)",
+        "Previene la lixiviación de nutrientes deteniendo el riego cuando las plantas dejan de beber"
       ],
       "cta": "Agenda una Llamada"
     },
     "guide": {
       "heading": "Precisión Suiza. Servicio Americano.",
       "subheading": "Somos el puente entre tecnología de vanguardia y servicio de clase mundial.",
-      "quote": "He pasado 30 años en campos desde Colombia hasta Canadá. Sé que los productores no necesitan más sensores y datos—necesitan las perspectivas correctas que les informen qué hacer a continuación.",
+      "quote": "He pasado 30 años en campos desde Colombia hasta Canadá. Sé que los productores no necesitan más sensores y datos—necesitan las perspectivas correctas que les digan qué hacer a continuación.",
       "name": "Mauricio Manotas",
       "title": "CEO, Green Laniel",
       "stats": {
@@ -65,16 +65,16 @@
           "label": "instalaciones"
         },
         "validated": {
-          "value": "Validado con",
-          "label": "Agroscope Suiza"
+          "value": "30+ Años",
+          "label": "Experiencia en Campo"
         },
         "response": {
           "value": "Respuesta en",
           "label": "horas, no días"
         },
         "bcorp": {
-          "value": "Certificación",
-          "label": "B-Corp"
+          "value": "Soporte",
+          "label": "Experto Inmediato"
         }
       }
     },
@@ -93,8 +93,8 @@
         },
         {
           "number": "3",
-          "title": "Administra con certeza",
-          "description": "Elimina el riesgo por estrés"
+          "title": "Administra con confianza",
+          "description": "Sabe exactamente cuándo actuar"
         }
       ],
       "cta": "Agenda una Llamada"
@@ -126,12 +126,12 @@
         },
         {
           "title": "Arándanos Colombia",
-          "quote": "Llamadas cada dos días preguntando cómo obtener Vita 1.",
-          "summary": "Recomendación viral de boca en boca desde una sola instalación; el agrónomo pasó de conjeturas a monitoreo diario que informa decisiones agronómicas.",
+          "quote": "Detectamos goteros obstruidos antes de daño permanente.",
+          "summary": "Los sensores Vita detectaron estrés hídrico por goteros obstruidos en una zona, permitiendo al equipo solucionar el problema de riego mucho antes de que las plantas sufrieran daño permanente.",
           "tags": {
             "crop": "Arándanos",
             "size": "~5-10ha",
-            "useCase": "Consistencia de calidad"
+            "useCase": "Falla de equipos"
           },
           "cta": "Solicitar Caso de Estudio"
         }
@@ -175,6 +175,24 @@
       },
       "quote": "\"Necesitamos saber ANTES de que el daño esté hecho.\"",
       "quoteAttribution": "— Gerente de Agricultura de Precisión"
+    },
+    "threeStressors": {
+      "heading": "Tres Cosas Que Quitan el Sueño a los Productores",
+      "subheading": "Vita 1 aborda los riesgos fundamentales en tu operación",
+      "stressors": [
+        {
+          "title": "Desperdicio de Agua",
+          "description": "Operar bombas diesel cuando tus plantas ya están llenas desperdicia combustible, agua y dinero. Vita 1 te dice el momento en que tus plantas dejan de beber."
+        },
+        {
+          "title": "Lixiviación de Nutrientes",
+          "description": "El riego excesivo durante la iniciación de tubérculos o fases críticas de crecimiento lixivia nitrógeno costoso y aumenta la presión de enfermedades. Las señales de la planta muestran cuándo parar—antes de que sea tarde."
+        },
+        {
+          "title": "Detección Temprana de Enfermedades/Plagas",
+          "description": "El estrés abre la puerta a plagas y enfermedades. Detecta las señales de estrés temprano—antes de que aparezcan los síntomas—para prevenir brotes."
+        }
+      ]
     },
     "viewer360": {
       "heading": "Explora el Vita 1",
@@ -230,6 +248,28 @@
           "description": "Tamaño optimizado equilibra funcionalidad con mínima interferencia del cultivo. Diseñado para ambientes de plantación densa."
         }
       }
+    },
+    "plantSignal": {
+      "heading": "De la Planta al Panel de Control",
+      "subheading": "Más allá de sensores de suelo. Más allá de proxies. Comunicación directa con la planta.",
+      "steps": [
+        {
+          "number": "1",
+          "title": "La Planta Habla",
+          "description": "Vita 1 se sujeta al tallo y lee bioseñales eléctricas—la respuesta de estrés de la planta en tiempo real."
+        },
+        {
+          "number": "2",
+          "title": "Procesamiento de Señal",
+          "description": "Los sensores de ingeniería suiza interpretan las señales y las traducen en conocimientos accionables."
+        },
+        {
+          "number": "3",
+          "title": "Recibes Alertas",
+          "description": "Notificaciones en lenguaje sencillo te dicen exactamente qué está mal y dónde—sin paneles que revisar, la planta te escribe."
+        }
+      ],
+      "callout": "Los sensores tradicionales miden el ambiente alrededor de tus plantas. Vita 1 mide lo que está sucediendo dentro de ellas."
     },
     "useCases": {
       "heading": "Casos de Uso",
