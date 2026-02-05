@@ -9,8 +9,8 @@
     "hero": {
       "headline": "Your Plants Are Talking.",
       "headlineLine2": "Are You Listening?",
-      "subheadline": "Catch stress signals 24-48 hours before visible symptoms.",
-      "subheadline2": "Trade unpredictability for certainty.",
+      "subheadline": "Monitor water, temperature, and nutrient stress in real-time, directly from the plant.",
+      "subheadline2": "Stop reacting. Start preventing.",
       "primaryCta": "Schedule a Call",
       "secondaryCta": "See How It Works"
     },
@@ -45,18 +45,18 @@
         "Detect invisible stressors in time",
         "Prevent spoilage in storage"
       ],
-      "optimizersHeading": "PERFORMANCE OPTIMIZATION",
+      "optimizersHeading": "CUT DIESEL & NITROGEN COSTS",
       "optimizers": [
-        "Forecast stress events weeks in advance",
-        "Reduce input costs 30-50%",
-        "Improve yields and quality consistency"
+        "Shut off pumps the moment plants are full—save diesel and water",
+        "Real-time validation of nitrogen uptake (no more guessing on applications)",
+        "Prevent nutrient leaching by stopping irrigation when plants stop drinking"
       ],
       "cta": "Schedule a Call"
     },
     "guide": {
       "heading": "Swiss Precision. American Service.",
       "subheading": "We bridge spearhead tech with world-class service.",
-      "quote": "I've spent 30 years in fields from Colombia to Canada. I know what growers need isn't more sensors and data—it's the right insights that inform what to do next.",
+      "quote": "I've spent 30 years in fields from Colombia to Canada. I know growers don't need more sensors and data—they need the right insights that tell them what to do next.",
       "name": "Mauricio Manotas",
       "title": "CEO, Green Laniel",
       "stats": {
@@ -65,16 +65,16 @@
           "label": "installations"
         },
         "validated": {
-          "value": "Validated with",
-          "label": "Agroscope Switzerland"
+          "value": "30+ Years",
+          "label": "Field Experience"
         },
         "response": {
           "value": "Response in",
           "label": "hours, not days"
         },
         "bcorp": {
-          "value": "B-Corp",
-          "label": "Certified"
+          "value": "Same-Day",
+          "label": "Expert Support"
         }
       }
     },
@@ -93,8 +93,8 @@
         },
         {
           "number": "3",
-          "title": "Manage with certainty",
-          "description": "Eliminate plant stress risk"
+          "title": "Manage with confidence",
+          "description": "Know exactly when to act"
         }
       ],
       "cta": "Schedule a Call"
@@ -126,12 +126,12 @@
         },
         {
           "title": "Colombia Blueberries",
-          "quote": "Calls every other day asking how to get Vita 1.",
-          "summary": "Viral word-of-mouth from single installation; agronomist went from guesswork to daily monitoring that informs agronomic decisions.",
+          "quote": "We caught clogged drippers before permanent damage.",
+          "summary": "Vita sensors detected water stress from clogged drippers in one zone, allowing the team to fix the irrigation problem long before the plants suffered permanent damage.",
           "tags": {
             "crop": "Blueberries",
             "size": "~5-10ha",
-            "useCase": "Quality consistency"
+            "useCase": "Equipment failure"
           },
           "cta": "Request Full Case Study"
         }
@@ -175,6 +175,24 @@
       },
       "quote": "\"We need to know BEFORE the damage is done.\"",
       "quoteAttribution": "— Precision Ag Manager"
+    },
+    "threeStressors": {
+      "heading": "Three Things That Keep Growers Up at Night",
+      "subheading": "Vita 1 addresses the core risks in your operation",
+      "stressors": [
+        {
+          "title": "Water Waste",
+          "description": "Running diesel pumps when your plants are already full wastes fuel, water, and money. Vita 1 tells you the moment your plants stop drinking."
+        },
+        {
+          "title": "Nutrient Leaching",
+          "description": "Over-irrigating during tuber initiation or critical growth phases leaches expensive nitrogen and increases disease pressure. Plant signals show when to stop—before it's too late."
+        },
+        {
+          "title": "Early Disease/Pest Detection",
+          "description": "Stress opens the door for pests and disease. Catch the stress signals early—before symptoms appear—to prevent outbreaks."
+        }
+      ]
     },
     "viewer360": {
       "heading": "Explore the Vita 1",
@@ -230,6 +248,28 @@
           "description": "Optimized size balances functionality with minimal crop interference. Designed for dense planting environments."
         }
       }
+    },
+    "plantSignal": {
+      "heading": "From Plant to Dashboard",
+      "subheading": "Beyond soil sensors. Beyond proxies. Direct plant communication.",
+      "steps": [
+        {
+          "number": "1",
+          "title": "The Plant Speaks",
+          "description": "Vita 1 clips onto the stem and reads electrical biosignals—the plant's real-time stress response."
+        },
+        {
+          "number": "2",
+          "title": "Signal Processing",
+          "description": "Swiss-engineered sensors interpret the signals and translate them into actionable insights."
+        },
+        {
+          "number": "3",
+          "title": "You Get Alerts",
+          "description": "Plain-English notifications tell you exactly what's wrong and where—no dashboards to check, the plant texts you."
+        }
+      ],
+      "callout": "Traditional sensors measure the environment around your plants. Vita 1 measures what's happening inside them."
     },
     "useCases": {
       "heading": "Use Cases",
